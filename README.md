@@ -5,3 +5,5 @@
 *** ver 4 will have the ordered AoI idea. UL will be based on number of DLs and DL will be based on the excluding the ones that were allowed to UL.
 
 ## whenever actions removed, commented # remove_action
+
+*** dqn_dist_AoI_ver5 has the dqn enabled. others are similar to dist_Ao
