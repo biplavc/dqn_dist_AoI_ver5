@@ -1,0 +1,375 @@
+GPUs are []
+experiment is 1 with test_case = True, packet_loss = False, periodic_generation = False, RB_total_UL = 1, RB_total_DL = 2
+passed arguments are [('RP', 3, 'random'), ('RP', 3, 'greedy'), ('RP', 3, 'mad'), ('RP', 3, 'omad_greedy_UL'), ('RP', 3, 'rr'), ('RP', 3, 'pf')]
+adj_matrix = 
+ [[0 1 1]
+ [1 0 1]
+ [1 1 0]]
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+random ep = 20 took 12.39 seconds from start, rate = 1.61 eps/sec, finish_time = 2021-07-22 09:42:52.786721 
+random ep = 40 took 24.78 seconds from start, rate = 1.61 eps/sec, finish_time = 2021-07-22 09:42:52.758481 
+random ep = 60 took 37.18 seconds from start, rate = 1.61 eps/sec, finish_time = 2021-07-22 09:42:52.792471 
+random ep = 80 took 49.51 seconds from start, rate = 1.62 eps/sec, finish_time = 2021-07-22 09:42:52.707118 
+
+random scheduling  RP  placement,  3  . MEAN of final_step_rewards =  28.85 . MEAN of overall_ep_reward =  59873.52  MIN and MAX of overall_ep_reward =  57622 ,  61315  ... MEAN of overall_ep_peak_reward =  19606.5  MIN and MAX of overall_ep_peak_reward =  18421 ,  20357 . Similarly for final_step_UAV_rewards - MEAN =  {5.7} , MIN and MAX of final_step_UAV_rewards =  3 ,  18  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+greedy ep = 20 took 18.33 seconds from start, rate = 1.09 eps/sec, finish_time = 2021-07-22 09:44:24.670343 
+greedy ep = 40 took 36.54 seconds from start, rate = 1.09 eps/sec, finish_time = 2021-07-22 09:44:24.357939 
+greedy ep = 60 took 54.47 seconds from start, rate = 1.1 eps/sec, finish_time = 2021-07-22 09:44:23.795454 
+greedy ep = 80 took 72.43 seconds from start, rate = 1.1 eps/sec, finish_time = 2021-07-22 09:44:23.551351 
+
+greedy scheduling  RP  placement,  3  . MEAN of final_step_rewards =  16.71 . MEAN of overall_ep_reward =  33402.91  MIN and MAX of overall_ep_reward =  23995 ,  41971  ... MEAN of overall_ep_peak_reward =  8054.16  MIN and MAX of overall_ep_peak_reward =  5998 ,  9990 . Similarly for final_step_UAV_rewards - MEAN =  {3.0} , MIN and MAX of final_step_UAV_rewards =  3 ,  3  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+MAD ep = 20 took 21.09 seconds from start, rate = 0.95 eps/sec, finish_time = 2021-07-22 09:46:09.191508 
+MAD ep = 40 took 42.05 seconds from start, rate = 0.95 eps/sec, finish_time = 2021-07-22 09:46:08.866479 
+MAD ep = 60 took 63.08 seconds from start, rate = 0.95 eps/sec, finish_time = 2021-07-22 09:46:08.883260 
+MAD ep = 80 took 83.78 seconds from start, rate = 0.95 eps/sec, finish_time = 2021-07-22 09:46:08.469290 
+
+MAD scheduling  RP  placement,  3  users. MEAN of final_step_rewards =  12.0 . MEAN of overall_ep_reward =  23992.0  MIN and MAX of overall_ep_reward =  23992 ,  23992  ... MEAN of overall_ep_peak_reward =  5997.0  MIN and MAX of overall_ep_peak_reward =  5997 ,  5997 . Similarly for final_step_UAV_rewards - MEAN =  {3.0} , MIN and MAX of final_step_UAV_rewards =  3 ,  3  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+oMAD greedy UL ep = 20 took 21.81 seconds from start, rate = 0.92 eps/sec, finish_time = 2021-07-22 09:47:59.584746 
+oMAD greedy UL ep = 40 took 43.83 seconds from start, rate = 0.91 eps/sec, finish_time = 2021-07-22 09:48:00.087510 
+oMAD greedy UL ep = 60 took 65.52 seconds from start, rate = 0.92 eps/sec, finish_time = 2021-07-22 09:47:59.713961 
+oMAD greedy UL ep = 80 took 87.3 seconds from start, rate = 0.92 eps/sec, finish_time = 2021-07-22 09:47:59.634930 
+
+omad_greedy_UL_scheduling scheduling  RP  placement,  3  . MEAN of final_step_rewards =  12.0 . MEAN of overall_ep_reward =  23992.0  MIN and MAX of overall_ep_reward =  23992 ,  23992  ... MEAN of overall_ep_peak_reward =  5997.0  MIN and MAX of overall_ep_peak_reward =  5997 ,  5997 . Similarly for final_step_UAV_rewards - MEAN =  {3.0} , MIN and MAX of final_step_UAV_rewards =  3 ,  3  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+RR ep = 20 took 12.85 seconds from start, rate = 1.56 eps/sec, finish_time = 2021-07-22 09:49:05.734284 
+RR ep = 40 took 26.03 seconds from start, rate = 1.54 eps/sec, finish_time = 2021-07-22 09:49:06.574274 
+RR ep = 60 took 38.9 seconds from start, rate = 1.54 eps/sec, finish_time = 2021-07-22 09:49:06.326297 
+RR ep = 80 took 51.78 seconds from start, rate = 1.55 eps/sec, finish_time = 2021-07-22 09:49:06.219255 
+
+RR scheduling  RP  placement,  3  users. MEAN of final_step_rewards =  18.36 . MEAN of overall_ep_reward =  36696.97  MIN and MAX of overall_ep_reward =  23992 ,  47962  ... MEAN of overall_ep_peak_reward =  8812.22  MIN and MAX of overall_ep_peak_reward =  5997 ,  9990 . Similarly for final_step_UAV_rewards - MEAN =  {3.0} , MIN and MAX of final_step_UAV_rewards =  3 ,  3  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+PF ep = 20 took 48.94 seconds from start, rate = 0.41 eps/sec, finish_time = 2021-07-22 09:53:11.332961 
+PF ep = 40 took 98.43 seconds from start, rate = 0.41 eps/sec, finish_time = 2021-07-22 09:53:12.714602 
+PF ep = 60 took 147.84 seconds from start, rate = 0.41 eps/sec, finish_time = 2021-07-22 09:53:13.043568 
+PF ep = 80 took 198.46 seconds from start, rate = 0.4 eps/sec, finish_time = 2021-07-22 09:53:14.719001 
+
+pf scheduling  RP  placement,  3  . MEAN of final_step_rewards =  23.22 . MEAN of overall_ep_reward =  47939.47  MIN and MAX of overall_ep_reward =  46819 ,  49538  ... MEAN of overall_ep_peak_reward =  16032.09  MIN and MAX of overall_ep_peak_reward =  15405 ,  17100 . Similarly for final_step_UAV_rewards - MEAN =  {3.0} , MIN and MAX of final_step_UAV_rewards =  3 ,  3  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {0.5} , max PDR_upload =  {0.5} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+
+__________________________________________________________________________________________________________-
+
+GPUs are []
+experiment is 1 with test_case = True, packet_loss = False, periodic_generation = False, RB_total_UL = 10, RB_total_DL = 20
+passed arguments are [('RP', 3, 'random'), ('RP', 3, 'greedy'), ('RP', 3, 'mad'), ('RP', 3, 'omad_greedy_UL'), ('RP', 3, 'rr'), ('RP', 3, 'pf')]
+GPUs are []
+experiment is 1 with test_case = True, packet_loss = False, periodic_generation = False, RB_total_UL = 10, RB_total_DL = 20
+passed arguments are [('RP', 28, 'random'), ('RP', 28, 'greedy'), ('RP', 28, 'mad'), ('RP', 28, 'omad_greedy_UL'), ('RP', 28, 'rr'), ('RP', 28, 'pf')]
+adj_matrix = 
+ [[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.
+  1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1.
+  0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  1. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 1. 0. 1.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 1. 0.]]
+BS_location = [500.0, 500.0], user_locations = {10: [844.79, 337.4], 11: [387.93, 248.87], 12: [247.32, 280.0], 13: [944.58, 817.88], 14: [942.21, 840.46], 15: [7.21, 291.94], 16: [704.91, 311.76], 17: [765.21, 195.13], 18: [423.73, 288.2], 19: [451.37, 233.23], 20: [259.66, 797.39], 21: [81.08, 462.67], 22: [997.47, 518.87], 23: [648.0, 700.88], 24: [145.06, 673.78], 25: [66.44, 913.53], 26: [635.02, 441.15], 27: [183.7, 435.92], 28: [588.77, 634.43], 29: [198.71, 323.53], 30: [839.43, 708.16], 31: [277.48, 582.2], 32: [862.1, 122.15], 33: [934.58, 290.92], 34: [25.68, 357.08], 35: [82.61, 964.47], 36: [285.69, 675.21], 37: [327.12, 322.81]}, max distance = 497.4510336706519, min distance = 51.29957992030734
+random ep = 20 took 99.42 seconds from start, rate = 0.2 eps/sec, finish_time = 2021-07-22 10:38:56.759194 
+random ep = 40 took 198.59 seconds from start, rate = 0.2 eps/sec, finish_time = 2021-07-22 10:38:56.107734 
+random ep = 60 took 297.8 seconds from start, rate = 0.2 eps/sec, finish_time = 2021-07-22 10:38:55.972779 
+random ep = 80 took 396.61 seconds from start, rate = 0.2 eps/sec, finish_time = 2021-07-22 10:38:55.402083 
+
+random scheduling  RP  placement,  28  . MEAN of final_step_rewards =  259.86 . MEAN of overall_ep_reward =  514520.33  MIN and MAX of overall_ep_reward =  509877 ,  521045  ... MEAN of overall_ep_peak_reward =  29412.21  MIN and MAX of overall_ep_peak_reward =  28556 ,  30836 . Similarly for final_step_UAV_rewards - MEAN =  {50.66} , MIN and MAX of final_step_UAV_rewards =  35 ,  76  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0]  with shape  (84,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+BS_location = [500.0, 500.0], user_locations = {10: [844.79, 337.4], 11: [387.93, 248.87], 12: [247.32, 280.0], 13: [944.58, 817.88], 14: [942.21, 840.46], 15: [7.21, 291.94], 16: [704.91, 311.76], 17: [765.21, 195.13], 18: [423.73, 288.2], 19: [451.37, 233.23], 20: [259.66, 797.39], 21: [81.08, 462.67], 22: [997.47, 518.87], 23: [648.0, 700.88], 24: [145.06, 673.78], 25: [66.44, 913.53], 26: [635.02, 441.15], 27: [183.7, 435.92], 28: [588.77, 634.43], 29: [198.71, 323.53], 30: [839.43, 708.16], 31: [277.48, 582.2], 32: [862.1, 122.15], 33: [934.58, 290.92], 34: [25.68, 357.08], 35: [82.61, 964.47], 36: [285.69, 675.21], 37: [327.12, 322.81]}, max distance = 497.4510336706519, min distance = 51.29957992030734
+greedy ep = 20 took 120.57 seconds from start, rate = 0.17 eps/sec, finish_time = 2021-07-22 10:49:03.700930 
+greedy ep = 40 took 241.57 seconds from start, rate = 0.17 eps/sec, finish_time = 2021-07-22 10:49:04.763753 
+greedy ep = 60 took 363.0 seconds from start, rate = 0.17 eps/sec, finish_time = 2021-07-22 10:49:05.836862 
+greedy ep = 80 took 485.1 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-22 10:49:07.212311 
+
+greedy scheduling  RP  placement,  28  . MEAN of final_step_rewards =  116.0 . MEAN of overall_ep_reward =  232698.74  MIN and MAX of overall_ep_reward =  232072 ,  233472  ... MEAN of overall_ep_peak_reward =  6069.55  MIN and MAX of overall_ep_peak_reward =  6017 ,  6204 . Similarly for final_step_UAV_rewards - MEAN =  {26.0} , MIN and MAX of final_step_UAV_rewards =  26 ,  26  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0]  with shape  (84,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+BS_location = [500.0, 500.0], user_locations = {10: [844.79, 337.4], 11: [387.93, 248.87], 12: [247.32, 280.0], 13: [944.58, 817.88], 14: [942.21, 840.46], 15: [7.21, 291.94], 16: [704.91, 311.76], 17: [765.21, 195.13], 18: [423.73, 288.2], 19: [451.37, 233.23], 20: [259.66, 797.39], 21: [81.08, 462.67], 22: [997.47, 518.87], 23: [648.0, 700.88], 24: [145.06, 673.78], 25: [66.44, 913.53], 26: [635.02, 441.15], 27: [183.7, 435.92], 28: [588.77, 634.43], 29: [198.71, 323.53], 30: [839.43, 708.16], 31: [277.48, 582.2], 32: [862.1, 122.15], 33: [934.58, 290.92], 34: [25.68, 357.08], 35: [82.61, 964.47], 36: [285.69, 675.21], 37: [327.12, 322.81]}, max distance = 497.4510336706519, min distance = 51.29957992030734
+MAD ep = 20 took 126.14 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-22 10:59:44.035944 
+MAD ep = 40 took 253.38 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-22 10:59:46.806958 
+MAD ep = 60 took 380.6 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-22 10:59:47.687241 
+MAD ep = 80 took 507.3 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-22 10:59:47.466828 
+
+MAD scheduling  RP  placement,  28  users. MEAN of final_step_rewards =  108.0 . MEAN of overall_ep_reward =  215932.0  MIN and MAX of overall_ep_reward =  215932 ,  215932  ... MEAN of overall_ep_peak_reward =  5997.0  MIN and MAX of overall_ep_peak_reward =  5997 ,  5997 . Similarly for final_step_UAV_rewards - MEAN =  {26.0} , MIN and MAX of final_step_UAV_rewards =  26 ,  26  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0]  with shape  (84,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+BS_location = [500.0, 500.0], user_locations = {10: [844.79, 337.4], 11: [387.93, 248.87], 12: [247.32, 280.0], 13: [944.58, 817.88], 14: [942.21, 840.46], 15: [7.21, 291.94], 16: [704.91, 311.76], 17: [765.21, 195.13], 18: [423.73, 288.2], 19: [451.37, 233.23], 20: [259.66, 797.39], 21: [81.08, 462.67], 22: [997.47, 518.87], 23: [648.0, 700.88], 24: [145.06, 673.78], 25: [66.44, 913.53], 26: [635.02, 441.15], 27: [183.7, 435.92], 28: [588.77, 634.43], 29: [198.71, 323.53], 30: [839.43, 708.16], 31: [277.48, 582.2], 32: [862.1, 122.15], 33: [934.58, 290.92], 34: [25.68, 357.08], 35: [82.61, 964.47], 36: [285.69, 675.21], 37: [327.12, 322.81]}, max distance = 497.4510336706519, min distance = 51.29957992030734
+oMAD greedy UL ep = 20 took 128.53 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-22 11:10:38.031945 
+oMAD greedy UL ep = 40 took 256.65 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-22 11:10:37.021028 
+oMAD greedy UL ep = 60 took 385.08 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-22 11:10:37.201067 
+oMAD greedy UL ep = 80 took 513.95 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-22 11:10:37.846219 
+
+omad_greedy_UL_scheduling scheduling  RP  placement,  28  . MEAN of final_step_rewards =  108.0 . MEAN of overall_ep_reward =  215932.0  MIN and MAX of overall_ep_reward =  215932 ,  215932  ... MEAN of overall_ep_peak_reward =  5997.0  MIN and MAX of overall_ep_peak_reward =  5997 ,  5997 . Similarly for final_step_UAV_rewards - MEAN =  {26.0} , MIN and MAX of final_step_UAV_rewards =  26 ,  26  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0]  with shape  (84,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+BS_location = [500.0, 500.0], user_locations = {10: [844.79, 337.4], 11: [387.93, 248.87], 12: [247.32, 280.0], 13: [944.58, 817.88], 14: [942.21, 840.46], 15: [7.21, 291.94], 16: [704.91, 311.76], 17: [765.21, 195.13], 18: [423.73, 288.2], 19: [451.37, 233.23], 20: [259.66, 797.39], 21: [81.08, 462.67], 22: [997.47, 518.87], 23: [648.0, 700.88], 24: [145.06, 673.78], 25: [66.44, 913.53], 26: [635.02, 441.15], 27: [183.7, 435.92], 28: [588.77, 634.43], 29: [198.71, 323.53], 30: [839.43, 708.16], 31: [277.48, 582.2], 32: [862.1, 122.15], 33: [934.58, 290.92], 34: [25.68, 357.08], 35: [82.61, 964.47], 36: [285.69, 675.21], 37: [327.12, 322.81]}, max distance = 497.4510336706519, min distance = 51.29957992030734
+RR ep = 20 took 97.23 seconds from start, rate = 0.21 eps/sec, finish_time = 2021-07-22 11:18:51.369808 
+RR ep = 40 took 195.68 seconds from start, rate = 0.2 eps/sec, finish_time = 2021-07-22 11:18:54.443857 
+RR ep = 60 took 293.96 seconds from start, rate = 0.2 eps/sec, finish_time = 2021-07-22 11:18:55.180541 
+RR ep = 80 took 391.89 seconds from start, rate = 0.2 eps/sec, finish_time = 2021-07-22 11:18:55.097872 
+
+RR scheduling  RP  placement,  28  users. MEAN of final_step_rewards =  163.42 . MEAN of overall_ep_reward =  326647.82  MIN and MAX of overall_ep_reward =  219929 ,  415696  ... MEAN of overall_ep_peak_reward =  9111.7  MIN and MAX of overall_ep_peak_reward =  5997 ,  9990 . Similarly for final_step_UAV_rewards - MEAN =  {26.0} , MIN and MAX of final_step_UAV_rewards =  26 ,  26  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0]  with shape  (84,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+BS_location = [500.0, 500.0], user_locations = {10: [844.79, 337.4], 11: [387.93, 248.87], 12: [247.32, 280.0], 13: [944.58, 817.88], 14: [942.21, 840.46], 15: [7.21, 291.94], 16: [704.91, 311.76], 17: [765.21, 195.13], 18: [423.73, 288.2], 19: [451.37, 233.23], 20: [259.66, 797.39], 21: [81.08, 462.67], 22: [997.47, 518.87], 23: [648.0, 700.88], 24: [145.06, 673.78], 25: [66.44, 913.53], 26: [635.02, 441.15], 27: [183.7, 435.92], 28: [588.77, 634.43], 29: [198.71, 323.53], 30: [839.43, 708.16], 31: [277.48, 582.2], 32: [862.1, 122.15], 33: [934.58, 290.92], 34: [25.68, 357.08], 35: [82.61, 964.47], 36: [285.69, 675.21], 37: [327.12, 322.81]}, max distance = 497.4510336706519, min distance = 51.29957992030734
+PF ep = 20 took 368.31 seconds from start, rate = 0.05 eps/sec, finish_time = 2021-07-22 11:49:42.136178 
+PF ep = 40 took 732.02 seconds from start, rate = 0.05 eps/sec, finish_time = 2021-07-22 11:49:30.641623 
+PF ep = 60 took 1093.73 seconds from start, rate = 0.05 eps/sec, finish_time = 2021-07-22 11:49:23.468170 
+PF ep = 80 took 1454.84 seconds from start, rate = 0.05 eps/sec, finish_time = 2021-07-22 11:49:19.142972 
+
+pf scheduling  RP  placement,  28  . MEAN of final_step_rewards =  218.04 . MEAN of overall_ep_reward =  433371.46  MIN and MAX of overall_ep_reward =  429537 ,  436640  ... MEAN of overall_ep_peak_reward =  24612.46  MIN and MAX of overall_ep_peak_reward =  23829 ,  25635 . Similarly for final_step_UAV_rewards - MEAN =  {30.0} , MIN and MAX of final_step_UAV_rewards =  30 ,  30  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0]  with shape  (84,) , min PDR_upload =  {0.5} , max PDR_upload =  {0.5} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+GPUs are []
+experiment is 2 with test_case = True, packet_loss = True, periodic_generation = False, RB_total_UL = 10, RB_total_DL = 20
+passed arguments are [('RP', 28, 'random'), ('RP', 28, 'greedy'), ('RP', 28, 'mad'), ('RP', 28, 'omad_greedy_UL'), ('RP', 28, 'rr'), ('RP', 28, 'pf')]
+adj_matrix = 
+ [[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.
+  1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1.
+  0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  1. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 1. 0. 1.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 1. 0.]]
+BS_location = [500.0, 500.0], user_locations = {10: [844.79, 337.4], 11: [387.93, 248.87], 12: [247.32, 280.0], 13: [944.58, 817.88], 14: [942.21, 840.46], 15: [7.21, 291.94], 16: [704.91, 311.76], 17: [765.21, 195.13], 18: [423.73, 288.2], 19: [451.37, 233.23], 20: [259.66, 797.39], 21: [81.08, 462.67], 22: [997.47, 518.87], 23: [648.0, 700.88], 24: [145.06, 673.78], 25: [66.44, 913.53], 26: [635.02, 441.15], 27: [183.7, 435.92], 28: [588.77, 634.43], 29: [198.71, 323.53], 30: [839.43, 708.16], 31: [277.48, 582.2], 32: [862.1, 122.15], 33: [934.58, 290.92], 34: [25.68, 357.08], 35: [82.61, 964.47], 36: [285.69, 675.21], 37: [327.12, 322.81]}, max distance = 497.4510336706519, min distance = 51.29957992030734
+random ep = 20 took 93.82 seconds from start, rate = 0.21 eps/sec, finish_time = 2021-07-24 22:40:38.244226 
+random ep = 40 took 187.16 seconds from start, rate = 0.21 eps/sec, finish_time = 2021-07-24 22:40:37.075152 
+random ep = 60 took 280.87 seconds from start, rate = 0.21 eps/sec, finish_time = 2021-07-24 22:40:37.275215 
+random ep = 80 took 374.42 seconds from start, rate = 0.21 eps/sec, finish_time = 2021-07-24 22:40:37.190388 
+
+random scheduling  RP  placement,  28  . MEAN of final_step_rewards =  80034.21 . MEAN of overall_ep_reward =  80187140.46  MIN and MAX of overall_ep_reward =  80184296 ,  80190122  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {28011.51} , MIN and MAX of final_step_UAV_rewards =  28000 ,  28025  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0]  with shape  (84,) , min PDR_upload =  {0.4917} , max PDR_upload =  {0.5074} , min PDR_download =  {0.4954} , max PDR_upload =  {0.505075} , max_total_packet_lost_upload =  10166 , min_total_packet_lost_upload =  9852 , max_total_packet_lost_download =  20184 , min_total_packet_lost_download =  19797
+BS_location = [500.0, 500.0], user_locations = {10: [844.79, 337.4], 11: [387.93, 248.87], 12: [247.32, 280.0], 13: [944.58, 817.88], 14: [942.21, 840.46], 15: [7.21, 291.94], 16: [704.91, 311.76], 17: [765.21, 195.13], 18: [423.73, 288.2], 19: [451.37, 233.23], 20: [259.66, 797.39], 21: [81.08, 462.67], 22: [997.47, 518.87], 23: [648.0, 700.88], 24: [145.06, 673.78], 25: [66.44, 913.53], 26: [635.02, 441.15], 27: [183.7, 435.92], 28: [588.77, 634.43], 29: [198.71, 323.53], 30: [839.43, 708.16], 31: [277.48, 582.2], 32: [862.1, 122.15], 33: [934.58, 290.92], 34: [25.68, 357.08], 35: [82.61, 964.47], 36: [285.69, 675.21], 37: [327.12, 322.81]}, max distance = 497.4510336706519, min distance = 51.29957992030734
+greedy ep = 20 took 115.74 seconds from start, rate = 0.17 eps/sec, finish_time = 2021-07-24 22:50:17.514418 
+greedy ep = 40 took 230.49 seconds from start, rate = 0.17 eps/sec, finish_time = 2021-07-24 22:50:15.051688 
+greedy ep = 60 took 345.26 seconds from start, rate = 0.17 eps/sec, finish_time = 2021-07-24 22:50:14.256513 
+greedy ep = 80 took 460.74 seconds from start, rate = 0.17 eps/sec, finish_time = 2021-07-24 22:50:14.749978 
+
+greedy scheduling  RP  placement,  28  . MEAN of final_step_rewards =  111907.3 . MEAN of overall_ep_reward =  111982762.79  MIN and MAX of overall_ep_reward =  111944312 ,  112006088  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {55940.03} , MIN and MAX of final_step_UAV_rewards =  55927 ,  55948  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0]  with shape  (84,) , min PDR_upload =  {0.0007} , max PDR_upload =  {0.0007} , min PDR_download =  {0.29715} , max PDR_upload =  {0.305525} , max_total_packet_lost_upload =  19986 , min_total_packet_lost_upload =  19986 , max_total_packet_lost_download =  28114 , min_total_packet_lost_download =  27779
+BS_location = [500.0, 500.0], user_locations = {10: [844.79, 337.4], 11: [387.93, 248.87], 12: [247.32, 280.0], 13: [944.58, 817.88], 14: [942.21, 840.46], 15: [7.21, 291.94], 16: [704.91, 311.76], 17: [765.21, 195.13], 18: [423.73, 288.2], 19: [451.37, 233.23], 20: [259.66, 797.39], 21: [81.08, 462.67], 22: [997.47, 518.87], 23: [648.0, 700.88], 24: [145.06, 673.78], 25: [66.44, 913.53], 26: [635.02, 441.15], 27: [183.7, 435.92], 28: [588.77, 634.43], 29: [198.71, 323.53], 30: [839.43, 708.16], 31: [277.48, 582.2], 32: [862.1, 122.15], 33: [934.58, 290.92], 34: [25.68, 357.08], 35: [82.61, 964.47], 36: [285.69, 675.21], 37: [327.12, 322.81]}, max distance = 497.4510336706519, min distance = 51.29957992030734
+MAD ep = 20 took 123.36 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-24 23:00:30.983542 
+MAD ep = 40 took 246.92 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-24 23:00:31.465719 
+MAD ep = 60 took 368.24 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-24 23:00:27.902050 
+MAD ep = 80 took 489.28 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-24 23:00:25.762782 
+
+MAD scheduling  RP  placement,  28  users. MEAN of final_step_rewards =  111907.08 . MEAN of overall_ep_reward =  111982277.18  MIN and MAX of overall_ep_reward =  111950245 ,  112008046  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {55939.87} , MIN and MAX of final_step_UAV_rewards =  55928 ,  55949  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0]  with shape  (84,) , min PDR_upload =  {0.0007} , max PDR_upload =  {0.0007} , min PDR_download =  {0.251275} , max PDR_upload =  {0.258125} , max_total_packet_lost_upload =  19986 , min_total_packet_lost_upload =  19986 , max_total_packet_lost_download =  29949 , min_total_packet_lost_download =  29675
+BS_location = [500.0, 500.0], user_locations = {10: [844.79, 337.4], 11: [387.93, 248.87], 12: [247.32, 280.0], 13: [944.58, 817.88], 14: [942.21, 840.46], 15: [7.21, 291.94], 16: [704.91, 311.76], 17: [765.21, 195.13], 18: [423.73, 288.2], 19: [451.37, 233.23], 20: [259.66, 797.39], 21: [81.08, 462.67], 22: [997.47, 518.87], 23: [648.0, 700.88], 24: [145.06, 673.78], 25: [66.44, 913.53], 26: [635.02, 441.15], 27: [183.7, 435.92], 28: [588.77, 634.43], 29: [198.71, 323.53], 30: [839.43, 708.16], 31: [277.48, 582.2], 32: [862.1, 122.15], 33: [934.58, 290.92], 34: [25.68, 357.08], 35: [82.61, 964.47], 36: [285.69, 675.21], 37: [327.12, 322.81]}, max distance = 497.4510336706519, min distance = 51.29957992030734
+oMAD greedy UL ep = 20 took 122.87 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-24 23:10:40.848175 
+oMAD greedy UL ep = 40 took 246.62 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-24 23:10:43.038795 
+oMAD greedy UL ep = 60 took 371.44 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-24 23:10:45.566801 
+oMAD greedy UL ep = 80 took 494.0 seconds from start, rate = 0.16 eps/sec, finish_time = 2021-07-24 23:10:43.995700 
+
+omad_greedy_UL_scheduling scheduling  RP  placement,  28  . MEAN of final_step_rewards =  111907.77 . MEAN of overall_ep_reward =  111983650.03  MIN and MAX of overall_ep_reward =  111952218 ,  112008042  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {55940.24} , MIN and MAX of final_step_UAV_rewards =  55930 ,  55949  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0]  with shape  (84,) , min PDR_upload =  {0.0007} , max PDR_upload =  {0.0007} , min PDR_download =  {0.322075} , max PDR_upload =  {0.327225} , max_total_packet_lost_upload =  19986 , min_total_packet_lost_upload =  19986 , max_total_packet_lost_download =  27117 , min_total_packet_lost_download =  26911
+BS_location = [500.0, 500.0], user_locations = {10: [844.79, 337.4], 11: [387.93, 248.87], 12: [247.32, 280.0], 13: [944.58, 817.88], 14: [942.21, 840.46], 15: [7.21, 291.94], 16: [704.91, 311.76], 17: [765.21, 195.13], 18: [423.73, 288.2], 19: [451.37, 233.23], 20: [259.66, 797.39], 21: [81.08, 462.67], 22: [997.47, 518.87], 23: [648.0, 700.88], 24: [145.06, 673.78], 25: [66.44, 913.53], 26: [635.02, 441.15], 27: [183.7, 435.92], 28: [588.77, 634.43], 29: [198.71, 323.53], 30: [839.43, 708.16], 31: [277.48, 582.2], 32: [862.1, 122.15], 33: [934.58, 290.92], 34: [25.68, 357.08], 35: [82.61, 964.47], 36: [285.69, 675.21], 37: [327.12, 322.81]}, max distance = 497.4510336706519, min distance = 51.29957992030734
+RR ep = 20 took 92.9 seconds from start, rate = 0.22 eps/sec, finish_time = 2021-07-24 23:18:30.323572 
+RR ep = 40 took 185.75 seconds from start, rate = 0.22 eps/sec, finish_time = 2021-07-24 23:18:30.203931 
+RR ep = 60 took 278.62 seconds from start, rate = 0.22 eps/sec, finish_time = 2021-07-24 23:18:30.194657 
+RR ep = 80 took 371.3 seconds from start, rate = 0.22 eps/sec, finish_time = 2021-07-24 23:18:29.952569 
+
+RR scheduling  RP  placement,  28  users. MEAN of final_step_rewards =  80007.78 . MEAN of overall_ep_reward =  80133364.65  MIN and MAX of overall_ep_reward =  80103124 ,  80158761  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {27999.01} , MIN and MAX of final_step_UAV_rewards =  27996 ,  28002  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0]  with shape  (84,) , min PDR_upload =  {0.4999} , max PDR_upload =  {0.5001} , min PDR_download =  {0.4999} , max PDR_upload =  {0.500075} , max_total_packet_lost_upload =  10002 , min_total_packet_lost_upload =  9998 , max_total_packet_lost_download =  20004 , min_total_packet_lost_download =  19997
+BS_location = [500.0, 500.0], user_locations = {10: [844.79, 337.4], 11: [387.93, 248.87], 12: [247.32, 280.0], 13: [944.58, 817.88], 14: [942.21, 840.46], 15: [7.21, 291.94], 16: [704.91, 311.76], 17: [765.21, 195.13], 18: [423.73, 288.2], 19: [451.37, 233.23], 20: [259.66, 797.39], 21: [81.08, 462.67], 22: [997.47, 518.87], 23: [648.0, 700.88], 24: [145.06, 673.78], 25: [66.44, 913.53], 26: [635.02, 441.15], 27: [183.7, 435.92], 28: [588.77, 634.43], 29: [198.71, 323.53], 30: [839.43, 708.16], 31: [277.48, 582.2], 32: [862.1, 122.15], 33: [934.58, 290.92], 34: [25.68, 357.08], 35: [82.61, 964.47], 36: [285.69, 675.21], 37: [327.12, 322.81]}, max distance = 497.4510336706519, min distance = 51.29957992030734
+PF ep = 20 took 363.13 seconds from start, rate = 0.06 eps/sec, finish_time = 2021-07-24 23:48:47.245710 
+PF ep = 40 took 724.29 seconds from start, rate = 0.06 eps/sec, finish_time = 2021-07-24 23:48:42.307259 
+PF ep = 60 took 1084.5 seconds from start, rate = 0.06 eps/sec, finish_time = 2021-07-24 23:48:39.084062 
+PF ep = 80 took 1445.61 seconds from start, rate = 0.06 eps/sec, finish_time = 2021-07-24 23:48:38.591564 
+
+pf scheduling  RP  placement,  28  . MEAN of final_step_rewards =  79989.07 . MEAN of overall_ep_reward =  80097582.46  MIN and MAX of overall_ep_reward =  80097105 ,  80098055  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {27991.61} , MIN and MAX of final_step_UAV_rewards =  27990 ,  27994  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0]  with shape  (84,) , min PDR_upload =  {0.5} , max PDR_upload =  {0.5} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  12000 , min_total_packet_lost_upload =  12000 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+GPUs are []
+experiment is 2 with test_case = True, packet_loss = True, periodic_generation = False, RB_total_UL = 1, RB_total_DL = 2
+passed arguments are [('RP', 3, 'random'), ('RP', 3, 'greedy'), ('RP', 3, 'mad'), ('RP', 3, 'omad_greedy_UL'), ('RP', 3, 'rr'), ('RP', 3, 'pf')]
+adj_matrix = 
+ [[0 1 1]
+ [1 0 1]
+ [1 1 0]]
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+random ep = 20 took 12.1 seconds from start, rate = 1.65 eps/sec, finish_time = 2021-07-25 00:31:21.896342 
+random ep = 40 took 24.03 seconds from start, rate = 1.66 eps/sec, finish_time = 2021-07-25 00:31:21.468628 
+random ep = 60 took 35.99 seconds from start, rate = 1.67 eps/sec, finish_time = 2021-07-25 00:31:21.378962 
+random ep = 80 took 47.93 seconds from start, rate = 1.67 eps/sec, finish_time = 2021-07-25 00:31:21.318428 
+
+random scheduling  RP  placement,  3  . MEAN of final_step_rewards =  8006.08 . MEAN of overall_ep_reward =  8023934.34  MIN and MAX of overall_ep_reward =  8022498 ,  8025370  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {2002.94} , MIN and MAX of final_step_UAV_rewards =  2000 ,  2013  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {0.6385} , max PDR_upload =  {0.691} , min PDR_download =  {0.65125} , max PDR_upload =  {0.6865} , max_total_packet_lost_upload =  723 , min_total_packet_lost_upload =  618 , max_total_packet_lost_download =  1395 , min_total_packet_lost_download =  1254
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+greedy ep = 20 took 16.82 seconds from start, rate = 1.19 eps/sec, finish_time = 2021-07-25 00:32:45.547643 
+greedy ep = 40 took 33.75 seconds from start, rate = 1.19 eps/sec, finish_time = 2021-07-25 00:32:45.793528 
+greedy ep = 60 took 50.62 seconds from start, rate = 1.19 eps/sec, finish_time = 2021-07-25 00:32:45.789418 
+greedy ep = 80 took 67.85 seconds from start, rate = 1.18 eps/sec, finish_time = 2021-07-25 00:32:46.233680 
+
+greedy scheduling  RP  placement,  3  . MEAN of final_step_rewards =  11989.02 . MEAN of overall_ep_reward =  11996066.1  MIN and MAX of overall_ep_reward =  11978116 ,  12000021  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {5992.02} , MIN and MAX of final_step_UAV_rewards =  5983 ,  5994  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {0.001} , max PDR_upload =  {0.001} , min PDR_download =  {0.48275} , max PDR_upload =  {0.51525} , max_total_packet_lost_upload =  1998 , min_total_packet_lost_upload =  1998 , max_total_packet_lost_download =  2069 , min_total_packet_lost_download =  1939
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+MAD ep = 20 took 20.31 seconds from start, rate = 0.98 eps/sec, finish_time = 2021-07-25 00:34:27.681137 
+MAD ep = 40 took 40.56 seconds from start, rate = 0.99 eps/sec, finish_time = 2021-07-25 00:34:27.552597 
+MAD ep = 60 took 60.8 seconds from start, rate = 0.99 eps/sec, finish_time = 2021-07-25 00:34:27.486422 
+MAD ep = 80 took 80.91 seconds from start, rate = 0.99 eps/sec, finish_time = 2021-07-25 00:34:27.288504 
+
+MAD scheduling  RP  placement,  3  users. MEAN of final_step_rewards =  11988.72 . MEAN of overall_ep_reward =  11995461.12  MIN and MAX of overall_ep_reward =  11980089 ,  12000005  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {5991.72} , MIN and MAX of final_step_UAV_rewards =  5984 ,  5994  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {0.001} , max PDR_upload =  {0.001} , min PDR_download =  {0.0005} , max PDR_upload =  {0.00275} , max_total_packet_lost_upload =  1998 , min_total_packet_lost_upload =  1998 , max_total_packet_lost_download =  3998 , min_total_packet_lost_download =  3989
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+oMAD greedy UL ep = 20 took 20.75 seconds from start, rate = 0.96 eps/sec, finish_time = 2021-07-25 00:36:12.536467 
+oMAD greedy UL ep = 40 took 41.43 seconds from start, rate = 0.97 eps/sec, finish_time = 2021-07-25 00:36:12.358888 
+oMAD greedy UL ep = 60 took 61.93 seconds from start, rate = 0.97 eps/sec, finish_time = 2021-07-25 00:36:12.000714 
+oMAD greedy UL ep = 80 took 82.76 seconds from start, rate = 0.97 eps/sec, finish_time = 2021-07-25 00:36:12.234508 
+
+omad_greedy_UL_scheduling scheduling  RP  placement,  3  . MEAN of final_step_rewards =  11988.82 . MEAN of overall_ep_reward =  11995660.7  MIN and MAX of overall_ep_reward =  11968205 ,  12000005  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {5991.82} , MIN and MAX of final_step_UAV_rewards =  5978 ,  5994  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {0.001} , max PDR_upload =  {0.001} , min PDR_download =  {0.00075} , max PDR_upload =  {0.00325} , max_total_packet_lost_upload =  1998 , min_total_packet_lost_upload =  1998 , max_total_packet_lost_download =  3997 , min_total_packet_lost_download =  3987
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+RR ep = 20 took 12.58 seconds from start, rate = 1.59 eps/sec, finish_time = 2021-07-25 00:37:17.125868 
+RR ep = 40 took 25.21 seconds from start, rate = 1.59 eps/sec, finish_time = 2021-07-25 00:37:17.239933 
+RR ep = 60 took 37.82 seconds from start, rate = 1.59 eps/sec, finish_time = 2021-07-25 00:37:17.266200 
+RR ep = 80 took 50.34 seconds from start, rate = 1.59 eps/sec, finish_time = 2021-07-25 00:37:17.155217 
+
+RR scheduling  RP  placement,  3  users. MEAN of final_step_rewards =  8002.0 . MEAN of overall_ep_reward =  8016232.35  MIN and MAX of overall_ep_reward =  8011997 ,  8019988  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {2000.98} , MIN and MAX of final_step_UAV_rewards =  2000 ,  2002  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {0.6665} , max PDR_upload =  {0.667} , min PDR_download =  {0.6665} , max PDR_upload =  {0.667} , max_total_packet_lost_upload =  667 , min_total_packet_lost_upload =  666 , max_total_packet_lost_download =  1334 , min_total_packet_lost_download =  1332
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+GPUs are []
+experiment is 2 with test_case = True, packet_loss = True, periodic_generation = False, RB_total_UL = 1, RB_total_DL = 2
+passed arguments are [('RP', 3, 'random'), ('RP', 3, 'greedy'), ('RP', 3, 'mad'), ('RP', 3, 'omad_greedy_UL'), ('RP', 3, 'rr'), ('RP', 3, 'pf')]
+adj_matrix = 
+ [[0 1 1]
+ [1 0 1]
+ [1 1 0]]
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+random ep = 20 took 12.06 seconds from start, rate = 1.66 eps/sec, finish_time = 2021-07-25 10:07:27.221200 
+random ep = 40 took 23.94 seconds from start, rate = 1.67 eps/sec, finish_time = 2021-07-25 10:07:26.760757 
+random ep = 60 took 35.78 seconds from start, rate = 1.68 eps/sec, finish_time = 2021-07-25 10:07:26.550679 
+random ep = 80 took 47.66 seconds from start, rate = 1.68 eps/sec, finish_time = 2021-07-25 10:07:26.485463 
+
+random scheduling  RP  placement,  3  . MEAN of final_step_rewards =  8006.08 . MEAN of overall_ep_reward =  8023934.34  MIN and MAX of overall_ep_reward =  8022498 ,  8025370  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {2002.94} , MIN and MAX of final_step_UAV_rewards =  2000 ,  2013  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {0.6385} , max PDR_upload =  {0.691} , min PDR_download =  {0.65125} , max PDR_upload =  {0.6865} , max_total_packet_lost_upload =  723 , min_total_packet_lost_upload =  618 , max_total_packet_lost_download =  1395 , min_total_packet_lost_download =  1254
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+greedy ep = 20 took 16.85 seconds from start, rate = 1.19 eps/sec, finish_time = 2021-07-25 10:08:50.803756 
+greedy ep = 40 took 33.74 seconds from start, rate = 1.19 eps/sec, finish_time = 2021-07-25 10:08:50.924769 
+greedy ep = 60 took 50.67 seconds from start, rate = 1.18 eps/sec, finish_time = 2021-07-25 10:08:51.023601 
+greedy ep = 80 took 67.58 seconds from start, rate = 1.18 eps/sec, finish_time = 2021-07-25 10:08:51.051884 
+
+greedy scheduling  RP  placement,  3  . MEAN of final_step_rewards =  11989.02 . MEAN of overall_ep_reward =  11996066.1  MIN and MAX of overall_ep_reward =  11978116 ,  12000021  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {5992.02} , MIN and MAX of final_step_UAV_rewards =  5983 ,  5994  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {0.001} , max PDR_upload =  {0.001} , min PDR_download =  {0.48275} , max PDR_upload =  {0.51525} , max_total_packet_lost_upload =  1998 , min_total_packet_lost_upload =  1998 , max_total_packet_lost_download =  2069 , min_total_packet_lost_download =  1939
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+MAD ep = 20 took 20.04 seconds from start, rate = 1.0 eps/sec, finish_time = 2021-07-25 10:10:31.249358 
+MAD ep = 40 took 40.16 seconds from start, rate = 1.0 eps/sec, finish_time = 2021-07-25 10:10:31.439823 
+MAD ep = 60 took 60.3 seconds from start, rate = 1.0 eps/sec, finish_time = 2021-07-25 10:10:31.531654 
+MAD ep = 80 took 80.21 seconds from start, rate = 1.0 eps/sec, finish_time = 2021-07-25 10:10:31.302711 
+
+MAD scheduling  RP  placement,  3  users. MEAN of final_step_rewards =  11988.72 . MEAN of overall_ep_reward =  11995461.12  MIN and MAX of overall_ep_reward =  11980089 ,  12000005  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {5991.72} , MIN and MAX of final_step_UAV_rewards =  5984 ,  5994  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {0.001} , max PDR_upload =  {0.001} , min PDR_download =  {0.0005} , max PDR_upload =  {0.00275} , max_total_packet_lost_upload =  1998 , min_total_packet_lost_upload =  1998 , max_total_packet_lost_download =  3998 , min_total_packet_lost_download =  3989
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+oMAD greedy UL ep = 20 took 20.65 seconds from start, rate = 0.97 eps/sec, finish_time = 2021-07-25 10:12:16.288785 
+oMAD greedy UL ep = 40 took 41.27 seconds from start, rate = 0.97 eps/sec, finish_time = 2021-07-25 10:12:16.211224 
+oMAD greedy UL ep = 60 took 61.78 seconds from start, rate = 0.97 eps/sec, finish_time = 2021-07-25 10:12:16.007440 
+oMAD greedy UL ep = 80 took 82.45 seconds from start, rate = 0.97 eps/sec, finish_time = 2021-07-25 10:12:16.109827 
+
+omad_greedy_UL_scheduling scheduling  RP  placement,  3  . MEAN of final_step_rewards =  11988.82 . MEAN of overall_ep_reward =  11995660.7  MIN and MAX of overall_ep_reward =  11968205 ,  12000005  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {5991.82} , MIN and MAX of final_step_UAV_rewards =  5978 ,  5994  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {0.001} , max PDR_upload =  {0.001} , min PDR_download =  {0.00075} , max PDR_upload =  {0.00325} , max_total_packet_lost_upload =  1998 , min_total_packet_lost_upload =  1998 , max_total_packet_lost_download =  3997 , min_total_packet_lost_download =  3987
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+RR ep = 20 took 12.35 seconds from start, rate = 1.62 eps/sec, finish_time = 2021-07-25 10:13:19.743959 
+RR ep = 40 took 24.89 seconds from start, rate = 1.61 eps/sec, finish_time = 2021-07-25 10:13:20.218206 
+RR ep = 60 took 37.28 seconds from start, rate = 1.61 eps/sec, finish_time = 2021-07-25 10:13:20.127909 
+RR ep = 80 took 49.8 seconds from start, rate = 1.61 eps/sec, finish_time = 2021-07-25 10:13:20.240039 
+
+RR scheduling  RP  placement,  3  users. MEAN of final_step_rewards =  8002.0 . MEAN of overall_ep_reward =  8016232.35  MIN and MAX of overall_ep_reward =  8011997 ,  8019988  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {2000.98} , MIN and MAX of final_step_UAV_rewards =  2000 ,  2002  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {0.6665} , max PDR_upload =  {0.667} , min PDR_download =  {0.6665} , max PDR_upload =  {0.667} , max_total_packet_lost_upload =  667 , min_total_packet_lost_upload =  666 , max_total_packet_lost_download =  1334 , min_total_packet_lost_download =  1332
+BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
+PF ep = 20 took 47.98 seconds from start, rate = 0.42 eps/sec, finish_time = 2021-07-25 10:17:20.183049 
+PF ep = 40 took 95.94 seconds from start, rate = 0.42 eps/sec, finish_time = 2021-07-25 10:17:20.129443 
+PF ep = 60 took 144.1 seconds from start, rate = 0.42 eps/sec, finish_time = 2021-07-25 10:17:20.446657 
+PF ep = 80 took 192.19 seconds from start, rate = 0.42 eps/sec, finish_time = 2021-07-25 10:17:20.522596 
+
+pf scheduling  RP  placement,  3  . MEAN of final_step_rewards =  8003.91 . MEAN of overall_ep_reward =  8018499.54  MIN and MAX of overall_ep_reward =  8016929 ,  8019713  ... MEAN of overall_ep_peak_reward =  2001000.0  MIN and MAX of overall_ep_peak_reward =  2001000 ,  2001000 . Similarly for final_step_UAV_rewards - MEAN =  {2002.96} , MIN and MAX of final_step_UAV_rewards =  2000 ,  2047  end with final state of  [0 0 0 0 0 0 0 0 0]  with shape  (9,) , min PDR_upload =  {0.5} , max PDR_upload =  {0.5} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  2 , min_total_packet_lost_upload =  1 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
