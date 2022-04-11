@@ -118,8 +118,16 @@ def do_scheduling(deployment, I, scheduler):
             #                                     [1, 0, 0, 0, 0]])
             
             
-            adj_matrix              = np.array([[0, 1, 1], ## 
+            adj_matrix              = np.array([[0, 1, 1], ## one to all
                                                 [1, 0, 1],
+                                                [1, 1, 0]])
+            
+            adj_matrix              = np.array([[0, 1, 0], ## one to one
+                                                [0, 0, 1],
+                                                [1, 0, 0]])
+
+            adj_matrix              = np.array([[0, 1, 1], ## varying
+                                                [0, 0, 1],
                                                 [1, 1, 0]])
             
             
@@ -353,7 +361,7 @@ if __name__ == '__main__':
 
     deployments = ["RP"] 
     
-    schedulers  = ["mad", "omad_greedy_UL"]  
+    schedulers  = ["mad"]  
     # "random", "greedy", "mad", "omad_greedy_UL", "rr", "pf", "dqn"
 
     limit_memory = True ## enabling this makes the code not being able to find CUDA device
