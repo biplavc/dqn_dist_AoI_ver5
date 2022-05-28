@@ -1,24 +1,72 @@
 GPUs are []
 experiment is 1 with test_case = True, packet_loss = False, periodic_generation = False
-passed arguments are [('RP', 3, 'mad')]
+passed arguments are [('RP', 5, 'new'), ('RP', 5, 'mad'), ('RP', 5, 'omad_greedy_UL')]
 
 simulation will run for T=5 steps
 
 adj_matrix = 
 
 
- [[0 1 1]
- [1 0 1]
- [1 0 0]]
-BS_location = [500.0, 500.0], user_locations = {10: [721.22, 478.88], 11: [90.1, 19.82], 12: [549.4, 289.38]}, max distance = 410.4853103339996, min distance = 51.48766842652712
-0.04 seconds from start, rate = 134.72 eps/sec, finish_time = 2022-04-09 13:24:57.938167 
-0.06 seconds from start, rate = 165.86 eps/sec, finish_time = 2022-04-09 13:24:57.868498 
-0.08 seconds from start, rate = 177.47 eps/sec, finish_time = 2022-04-09 13:24:57.848787 
-0.11 seconds from start, rate = 183.76 eps/sec, finish_time = 2022-04-09 13:24:57.839149 
-0.39 seconds from start, rate = 64.18 eps/sec, finish_time = 2022-04-09 13:24:58.346127 
-0.42 seconds from start, rate = 72.24 eps/sec, finish_time = 2022-04-09 13:24:58.259135 
-0.44 seconds from start, rate = 80.18 eps/sec, finish_time = 2022-04-09 13:24:58.190610 
-0.45 seconds from start, rate = 88.03 eps/sec, finish_time = 2022-04-09 13:24:58.135014 
-0.47 seconds from start, rate = 95.41 eps/sec, finish_time = 2022-04-09 13:24:58.091065 
+ [[0 1 1 1 1]
+ [1 0 0 1 1]
+ [0 0 0 1 0]
+ [1 0 0 0 1]
+ [1 1 0 0 0]]
+BS_location = [500.0, 500.0], user_locations = {10: [154.97, 66.52], 11: [401.59, 917.96], 12: [800.45, 765.16], 13: [221.93, 536.68], 14: [276.68, 172.66]}, max distance = 345.6576064547112, min distance = 96.26301522391663
+0.17 seconds from start, rate = 58.38 eps/sec, finish_time = 2022-05-26 21:49:48.703843 
+0.22 seconds from start, rate = 92.57 eps/sec, finish_time = 2022-05-26 21:49:48.071175 
+0.34 seconds from start, rate = 87.12 eps/sec, finish_time = 2022-05-26 21:49:48.138657 
+0.39 seconds from start, rate = 102.59 eps/sec, finish_time = 2022-05-26 21:49:47.965571 
+0.52 seconds from start, rate = 96.04 eps/sec, finish_time = 2022-05-26 21:49:48.032073 
+0.65 seconds from start, rate = 92.75 eps/sec, finish_time = 2022-05-26 21:49:48.069003 
+0.69 seconds from start, rate = 101.29 eps/sec, finish_time = 2022-05-26 21:49:47.978097 
+0.82 seconds from start, rate = 98.07 eps/sec, finish_time = 2022-05-26 21:49:48.010529 
+0.87 seconds from start, rate = 103.7 eps/sec, finish_time = 2022-05-26 21:49:47.955211 
 
-MAD scheduling  RP  placement,  3  users. MEAN of final_step_rewards =  7.18 . MEAN of overall_ep_reward =  33.52  MIN and MAX of overall_ep_reward =  33.0 ,  36.0  ... MEAN of overall_ep_peak_reward =  9.14  MIN and MAX of overall_ep_peak_reward =  9.0 ,  10.0 . Similarly for final_step_UAV_rewards - MEAN =  {1.0} , MIN and MAX of final_step_UAV_rewards =  1.0 ,  1.0  end with final state of  [0 0 0 0 0 0 0 0]  with shape  (8,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+new scheduling  RP  placement,  5  users. MEAN of final_step_rewards =  36.0 . MEAN of overall_ep_reward =  140.0  MIN and MAX of overall_ep_reward =  140.0 ,  140.0  ... MEAN of overall_ep_peak_reward =  15.0  MIN and MAX of overall_ep_peak_reward =  15.0 ,  15.0 . Similarly for final_step_UAV_rewards - MEAN =  {8.81} , MIN and MAX of final_step_UAV_rewards =  7.0 ,  10.0  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]  with shape  (17,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+
+simulation will run for T=5 steps
+
+adj_matrix = 
+
+
+ [[0 1 1 1 1]
+ [1 0 0 1 1]
+ [0 0 0 1 0]
+ [1 0 0 0 1]
+ [1 1 0 0 0]]
+BS_location = [500.0, 500.0], user_locations = {10: [154.97, 66.52], 11: [401.59, 917.96], 12: [800.45, 765.16], 13: [221.93, 536.68], 14: [276.68, 172.66]}, max distance = 345.6576064547112, min distance = 96.26301522391663
+0.13 seconds from start, rate = 79.22 eps/sec, finish_time = 2022-05-26 21:49:49.260310 
+0.17 seconds from start, rate = 118.38 eps/sec, finish_time = 2022-05-26 21:49:48.842761 
+0.29 seconds from start, rate = 102.16 eps/sec, finish_time = 2022-05-26 21:49:48.976871 
+0.34 seconds from start, rate = 118.94 eps/sec, finish_time = 2022-05-26 21:49:48.838816 
+0.46 seconds from start, rate = 108.64 eps/sec, finish_time = 2022-05-26 21:49:48.918553 
+0.58 seconds from start, rate = 102.85 eps/sec, finish_time = 2022-05-26 21:49:48.970371 
+0.63 seconds from start, rate = 111.27 eps/sec, finish_time = 2022-05-26 21:49:48.896802 
+0.77 seconds from start, rate = 104.33 eps/sec, finish_time = 2022-05-26 21:49:48.956536 
+0.81 seconds from start, rate = 111.16 eps/sec, finish_time = 2022-05-26 21:49:48.897657 
+
+MAD scheduling  RP  placement,  5  users. MEAN of final_step_rewards =  36.0 . MEAN of overall_ep_reward =  140.12  MIN and MAX of overall_ep_reward =  140.0 ,  141.0  ... MEAN of overall_ep_peak_reward =  15.0  MIN and MAX of overall_ep_peak_reward =  15.0 ,  15.0 . Similarly for final_step_UAV_rewards - MEAN =  {4.0} , MIN and MAX of final_step_UAV_rewards =  4.0 ,  4.0  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]  with shape  (17,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+
+simulation will run for T=5 steps
+
+adj_matrix = 
+
+
+ [[0 1 1 1 1]
+ [1 0 0 1 1]
+ [0 0 0 1 0]
+ [1 0 0 0 1]
+ [1 1 0 0 0]]
+BS_location = [500.0, 500.0], user_locations = {10: [154.97, 66.52], 11: [401.59, 917.96], 12: [800.45, 765.16], 13: [221.93, 536.68], 14: [276.68, 172.66]}, max distance = 345.6576064547112, min distance = 96.26301522391663
+0.13 seconds from start, rate = 78.59 eps/sec, finish_time = 2022-05-26 21:49:50.225653 
+0.18 seconds from start, rate = 113.8 eps/sec, finish_time = 2022-05-26 21:49:49.831966 
+0.3 seconds from start, rate = 100.82 eps/sec, finish_time = 2022-05-26 21:49:49.945114 
+0.42 seconds from start, rate = 95.22 eps/sec, finish_time = 2022-05-26 21:49:50.003361 
+0.46 seconds from start, rate = 107.94 eps/sec, finish_time = 2022-05-26 21:49:49.879660 
+0.59 seconds from start, rate = 102.5 eps/sec, finish_time = 2022-05-26 21:49:49.928801 
+0.63 seconds from start, rate = 111.4 eps/sec, finish_time = 2022-05-26 21:49:49.850896 
+0.76 seconds from start, rate = 105.84 eps/sec, finish_time = 2022-05-26 21:49:49.898030 
+0.88 seconds from start, rate = 102.23 eps/sec, finish_time = 2022-05-26 21:49:49.931407 
+
+omad_greedy_UL_scheduling scheduling  RP  placement,  5  . MEAN of final_step_rewards =  36.01 . MEAN of overall_ep_reward =  140.23  MIN and MAX of overall_ep_reward =  140.0 ,  142.0  ... MEAN of overall_ep_peak_reward =  15.0  MIN and MAX of overall_ep_peak_reward =  15.0 ,  15.0 . Similarly for final_step_UAV_rewards - MEAN =  {4.0} , MIN and MAX of final_step_UAV_rewards =  4.0 ,  4.0  end with final state of  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]  with shape  (17,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0

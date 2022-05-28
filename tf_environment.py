@@ -125,12 +125,12 @@ coverage_capacity = 3 # max users 1 UAV can cover, used in create_graph_1
 
 set_gamma = 1
 RB_total_UL = 2 # L R_u, sample. has to be less than number of tx_users
-RB_total_DL = 3 # K R_d, update. has to be less than number of tx_rx_pairs
+RB_total_DL = 2 # K R_d, update. has to be less than number of tx_rx_pairs
 
 #@param {type:"integer"} # number of times collect_data is called, log_interval and eval_interval are used here. number of times the collect_episodes(...) will run. each collect_episode(...) runs for collect_episodes_per_iteration episodes to fill the buffer. once one iteration is over, the train_env is run on it and then buffer is clear. This value doesn't add to the returns that is showed as the final performance.
 
-random_episodes = 50 # all schedulers except dqn runs this number of times
-log_interval_random = random_episodes//10
+random_episodes = 100 # all schedulers except dqn runs this number of times
+log_interval_random = 1 if (random_episodes//10==0) else random_episodes//10
 
 num_iterations = 1_000_000 # 1_000_000 # dqn runs this number of times
 log_interval = 10_000 # @param {type:"integer"} # how frequently to print out in console

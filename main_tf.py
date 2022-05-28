@@ -40,7 +40,9 @@ from omad_links_UL_scheduling import *
 from omad_greedy_UL_scheduling import *
 from omad_cumAoI_UL_scheduling import *
 from pf_scheduling import *
-
+from laf_scheduling import *
+from lad_scheduling import *
+from new_scheduling import *
 
 import sys
 
@@ -75,7 +77,7 @@ def do_scheduling(deployment, I, scheduler):
         global print_matrix
         
         deployment_options = ["MDS", "RP"]
-        scheduler_options  = ["random", "greedy", "mad", "omad_greedy_UL", "omad_cumAoI_UL", "omad_links_UL" , "rr", "dqn", "pf"] ## "random", "greedy", "mad", "omad_greedy_UL", "omad_cumAoI_UL", "omad_links_UL" , "rr", "dqn", "pf"
+        scheduler_options  = ["random", "greedy", "mad", "omad_greedy_UL", "omad_cumAoI_UL", "omad_links_UL" , "rr", "dqn", "pf", "laf", "lad", "new"] ## "random", "greedy", "mad", "omad_greedy_UL", "omad_cumAoI_UL", "omad_links_UL" , "rr", "dqn", "pf"
         assert(deployment in deployment_options and scheduler in scheduler_options)
         # schedulers  = ["dqn" "random", "greedy", "mad", "omad_greedy_UL", "rr", "pf"]
 
@@ -118,17 +120,17 @@ def do_scheduling(deployment, I, scheduler):
             #                                     [1, 0, 0, 0, 0]])
             
             
-            adj_matrix              = np.array([[0, 1, 1], ## one to all
-                                                [1, 0, 1],
-                                                [1, 1, 0]])
+            # adj_matrix              = np.array([[0, 1, 1], ## one to all
+            #                                     [1, 0, 1],
+            #                                     [1, 1, 0]])
             
-            adj_matrix              = np.array([[0, 1, 0], ## one to one
-                                                [0, 0, 1],
-                                                [1, 0, 0]])
+            # adj_matrix              = np.array([[0, 1, 0], ## one to one
+            #                                     [0, 0, 1],
+            #                                     [1, 0, 0]])
 
-            adj_matrix              = np.array([[0, 1, 1], ## varying
-                                                [0, 0, 1],
-                                                [1, 1, 0]])
+            # adj_matrix              = np.array([[0, 1, 1], ## varying
+            #                                     [0, 0, 1],
+            #                                     [1, 1, 0]])
             
             
             # adj_matrix              = np.array([[0, 1], ## 2 UL 2 DL
@@ -335,6 +337,32 @@ def do_scheduling(deployment, I, scheduler):
             pickle.dump(pf_final, open(folder_name + "/" + deployment + "/" + str(I) + "U_pf_final.pickle", "wb"))
             pickle.dump(pf_all_actions, open(folder_name + "/" + deployment + "/" + str(I) + "U_pf_all_actions.pickle", "wb"))
 
+        if scheduler == "laf":
+            t1 = time.time()
+            laf_overall[I], laf_final[I], laf_overall_times[I] = laf_scheduling(I, drones_coverage, folder_name, deployment, packet_upload_loss_thresh, packet_download_loss_thresh, periodicity, adj_matrix, tx_rx_pairs, tx_users, RB_needed_UL, RB_needed_DL, BS_location, user_locations, T)
+            t2 = time.time()
+            print("LAF for ", I, " users and T = ", T, " slots took ", t2-t1, " seconds to complete", file=open(folder_name + "/results.txt", "a"), flush=True)
+            pickle.dump(laf_overall, open(folder_name + "/" + deployment + "/" + str(I) + "U_laf_scheduling_overall.pickle", "wb")) 
+            pickle.dump(laf_final, open(folder_name + "/" + deployment + "/" + str(I) + "U_laf_scheduling_final.pickle", "wb"))
+            pickle.dump(laf_all_actions, open(folder_name + "/" + deployment + "/" + str(I) + "U_laf_scheduling_all_actions.pickle", "wb"))
+
+        if scheduler == "lad":
+            t1 = time.time()
+            lad_overall[I], lad_final[I], lad_overall_times[I] = lad_scheduling(I, drones_coverage, folder_name, deployment, packet_upload_loss_thresh, packet_download_loss_thresh, periodicity, adj_matrix, tx_rx_pairs, tx_users, RB_needed_UL, RB_needed_DL, BS_location, user_locations, T)
+            t2 = time.time()
+            print("LAD for ", I, " users and T = ", T, " slots took ", t2-t1, " seconds to complete", file=open(folder_name + "/results.txt", "a"), flush=True)
+            pickle.dump(lad_overall, open(folder_name + "/" + deployment + "/" + str(I) + "U_lad_scheduling_overall.pickle", "wb")) 
+            pickle.dump(lad_final, open(folder_name + "/" + deployment + "/" + str(I) + "U_lad_scheduling_final.pickle", "wb"))
+            pickle.dump(lad_all_actions, open(folder_name + "/" + deployment + "/" + str(I) + "U_lad_scheduling_all_actions.pickle", "wb"))
+
+        if scheduler == "new":
+            t1 = time.time()
+            new_overall[I], new_final[I], new_overall_times[I] = new_scheduling(I, drones_coverage, folder_name, deployment, packet_upload_loss_thresh, packet_download_loss_thresh, periodicity, adj_matrix, tx_rx_pairs, tx_users, RB_needed_UL, RB_needed_DL, BS_location, user_locations, T)
+            t2 = time.time()
+            print("new for ", I, " users and T = ", T, " slots took ", t2-t1, " seconds to complete", file=open(folder_name + "/results.txt", "a"), flush=True)
+            pickle.dump(new_overall, open(folder_name + "/" + deployment + "/" + str(I) + "U_new_scheduling_overall.pickle", "wb")) 
+            pickle.dump(new_final, open(folder_name + "/" + deployment + "/" + str(I) + "U_new_scheduling_final.pickle", "wb"))
+            pickle.dump(new_all_actions, open(folder_name + "/" + deployment + "/" + str(I) + "U_new_scheduling_all_actions.pickle", "wb"))
 
 
 #############################################################
@@ -361,8 +389,8 @@ if __name__ == '__main__':
 
     deployments = ["RP"] 
     
-    schedulers  = ["mad"]  
-    # "random", "greedy", "mad", "omad_greedy_UL", "rr", "pf", "dqn"
+    schedulers  = ["new", "mad", "omad_greedy_UL"]  
+    # "random", "greedy", "mad", "omad_greedy_UL", "rr", "pf", "dqn", "laf"
 
     limit_memory = True ## enabling this makes the code not being able to find CUDA device
     
@@ -416,7 +444,7 @@ if __name__ == '__main__':
     
 
     if test_case:
-        users = [3] ##biplav
+        users = [5] ##biplav
     else:
         users = [3]
 
@@ -433,50 +461,42 @@ if __name__ == '__main__':
     c51_final = {}
     c51_all_actions = {}
     c51_overall_times = {} # c51_overall_avg for each MAX_STEPS
-
     
     reinforce_overall = {}
     reinforce_final = {}
     reinforce_all_actions = {}
     reinforce_overall_times = {} # reinforce_overall_avg for each MAX_STEPS
-
     
     random_overall = {} ## sum of age at destination nodes for all of the MAX_STEPS time steps
     random_overall = {} ## sum of age at destination nodes for all of the MAX_STEPS time steps
     random_final   = {} ## sum of age at destination nodes for step =  MAX_STEPS i.e. last time step
     random_all_actions = {}
     random_overall_times = {} # random_overall_times for each MAX_STEPS
-
     
     greedy_overall = {}
     greedy_final   = {}
     greedy_all_actions = {}
     greedy_overall_times = {} # greedy_overall_times for each MAX_STEPS
-
     
     mad_overall = {}
     mad_final   = {}
     mad_all_actions = {}
     mad_overall_times = {} #  mad_overall_avg for each MAX_STEPS
-
     
     sac_overall = {}
     sac_final   = {}
     sac_all_actions = {}
     sac_overall_times = {} # sac_overall_avg for each MAX_STEPS
-
     
     lrb_overall = {}
     lrb_final   = {}
     lrb_all_actions = {}
     lrb_overall_times = {} # lrb_overall_avg for each MAX_STEPS
 
-
     mrb_overall = {}
     mrb_final   = {}
     mrb_all_actions = {}
     mrb_overall_times = {} # mrb_overall_avg for each MAX_STEPS
-
     
     rr_overall = {}
     rr_final   = {}
@@ -488,6 +508,20 @@ if __name__ == '__main__':
     pf_all_actions = {}
     pf_overall_times = {} # rr_overall_avg for each MAX_STEPS
     
+    new_overall = {}
+    new_final   = {}
+    new_all_actions = {}
+    new_overall_times = {} # rr_overall_avg for each MAX_STEPS
+    
+    laf_overall = {}
+    laf_final   = {}
+    laf_all_actions = {}
+    laf_overall_times = {} # rr_overall_avg for each MAX_STEPS 
+    
+    lad_overall = {}
+    lad_final   = {}
+    lad_all_actions = {}
+    lad_overall_times = {} # rr_overall_avg for each MAX_STEPS     
     
     omad_greedy_UL_overall = {} 
     omad_greedy_UL_final = {}
@@ -504,7 +538,7 @@ if __name__ == '__main__':
     omad_links_UL_all_actions = {}
     omad_links_UL_overall_times = {}
 
-    
+
 
     pool = mp.Pool(mp.cpu_count())
     print(f"pool is {pool} \n\n", file = open(folder_name + "/results.txt", "a"))
