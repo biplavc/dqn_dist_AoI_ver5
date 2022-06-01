@@ -82,15 +82,18 @@ def do_scheduling(deployment, I, scheduler):
         # schedulers  = ["dqn" "random", "greedy", "mad", "omad_greedy_UL", "rr", "pf"]
 
         random.seed(4) ## this seed ensures same location of users in every case, keep both seeds
+        np.random.seed(4)
         
         if test_case:
-            
-            ## exp 24
-    #         print(f"under experiment {experiment}", file = open(folder_name + "/results.txt", "a"), flush = True)
 
             drones_needed           = 1
             users_per_drone         = [I]
             
+            adj_matrix = np.random.randint(2, size=(I, I))
+            for i in range(I):
+                for j in range(I):
+                    if i==j:
+                        adj_matrix[i][j] = 0
    
             # adj_matrix              = np.array([[0, 1, 1, 0, 0], ## 5 UL 10 DL
             #                                     [0, 0, 1, 1, 0],
@@ -224,7 +227,7 @@ def do_scheduling(deployment, I, scheduler):
                 user_locations[j] = [x,y]
                 distances.append(math.sqrt((BS_location[0]-x)**2 + (BS_location[1]-y)))
                 
-            print(f"BS_location = {BS_location}, user_locations = {user_locations}, max distance = {np.max(distances)}, min distance = {np.min(distances)}")
+            print(f"BS_location = {BS_location}, user_locations = {user_locations}, max distance = {np.max(distances)}, min distance = {np.min(distances)}, no of senders = {len(tx_users)}, no of sender-receiver pairs = {len(tx_rx_pairs)}")
             
 
             if packet_loss == True:
@@ -236,6 +239,7 @@ def do_scheduling(deployment, I, scheduler):
             packet_download_loss_thresh  = {tuple(yy) : SNR_threshold for yy in tx_rx_pairs}
             packet_upload_loss_thresh  = {yy : SNR_threshold for yy in user_list}
 
+                
                 
         else: ## user defined UAV and user configuration
             
@@ -389,7 +393,7 @@ if __name__ == '__main__':
 
     deployments = ["RP"] 
     
-    schedulers  = ["new", "mad", "omad_greedy_UL"]  
+    schedulers  = ["new", "mad"]  
     # "random", "greedy", "mad", "omad_greedy_UL", "rr", "pf", "dqn", "laf"
 
     limit_memory = True ## enabling this makes the code not being able to find CUDA device
@@ -444,7 +448,7 @@ if __name__ == '__main__':
     
 
     if test_case:
-        users = [5] ##biplav
+        users = [12] ##biplav
     else:
         users = [3]
 

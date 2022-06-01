@@ -59,23 +59,34 @@ def find_new_action(eval_env, slot): ## maximal age difference
             predicted_dest_AoI[tuple(x)] = predicted_dest_AoI[tuple(x)] + 1
             
     sampleDict_copy = copy.deepcopy(predicted_dest_AoI)
-    
-    # sampleDict_copy_sorted = dict(sorted(sampleDict_copy.items(), key=lambda item: item[1]))
-    # print(f"sampleDict_copy = {sampleDict_copy}")    
 
     while len(upload_users) < len(eval_env.UAV_age):
-        # print(f"upload_users = {upload_users}, eval_env.UAV_age = {eval_env.UAV_age}")    
+        # print(f"upload_users = {upload_users}, sampleDict_copy = {sampleDict_copy}")    
 
-        itemMaxValue = max(sampleDict_copy.items(), key=lambda x: x[1])
+        itemMaxValue = max(sampleDict_copy.items(), key=lambda x: x[1]) ## highest AoI at the dest
+        listOfKeys = list()
         for key, value in sampleDict_copy.items():
-            if value == itemMaxValue[1] and key[0] not in upload_users:
-                source = key[0]
+            if value == itemMaxValue[1] and key[0] not in listOfKeys:
+                # source = key[0]
                 # print(f"source = {source}, value = {value}")
-                upload_users.append(source) ## only one source added and rest pairs with same source will be removed in the next lines
+                # upload_users.append(source) ## only one source added and rest pairs with same source will be removed in the next lines
+                listOfKeys.append(key[0])
+                # print(f"key = {key}, key[0] = {key[0]}")
         
-        for k in list(sampleDict_copy.keys()):
-            if k[0] in upload_users:
-                del sampleDict_copy[k]
+        # print(f"listOfKeys = {listOfKeys}")
+        remaining_capacity = len(eval_env.UAV_age) - len(upload_users)
+        if remaining_capacity > 0:
+            selected_user = np.max(listOfKeys)
+            upload_users.append(selected_user)
+            # del sampleDict_copy[selected_user]
+            for key2, _ in predicted_dest_AoI.items():
+                if key2[0] == selected_user:
+                    del sampleDict_copy[key2]
+                    
+        
+        # for k in list(sampleDict_copy.keys()):
+        #     if k[0] in upload_users:
+        #         del sampleDict_copy[k]
                 
     # # if verbose:
     # print(f"\nslot {slot} begins - dest age = {eval_env.dest_age}, download_user_pairs_arr = {download_user_pairs_arr}, predicted_dest_AoI = {predicted_dest_AoI}")

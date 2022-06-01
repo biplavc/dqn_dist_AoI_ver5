@@ -124,8 +124,8 @@ MAX_AGE = min_steps + 1 + 1 # 20
 coverage_capacity = 3 # max users 1 UAV can cover, used in create_graph_1
 
 set_gamma = 1
-RB_total_UL = 2 # L R_u, sample. has to be less than number of tx_users
-RB_total_DL = 2 # K R_d, update. has to be less than number of tx_rx_pairs
+RB_total_UL = 6 # L R_u, sample. has to be less than number of tx_users
+RB_total_DL = 14 # K R_d, update. has to be less than number of tx_rx_pairs
 
 #@param {type:"integer"} # number of times collect_data is called, log_interval and eval_interval are used here. number of times the collect_episodes(...) will run. each collect_episode(...) runs for collect_episodes_per_iteration episodes to fill the buffer. once one iteration is over, the train_env is run on it and then buffer is clear. This value doesn't add to the returns that is showed as the final performance.
 
@@ -430,7 +430,7 @@ class UAV_network(py_environment.PyEnvironment):   # network of UAVs not just a 
             print(f'self.n_users = {self.n_users}, self.n_UAVs = {self.n_UAVs}, self.act_coverage = {self.act_coverage}, self.update_loss_thresh = {self.packet_upload_loss_thresh}, self.sample_loss_thresh = {self.packet_download_loss_thresh}, self.UAV_list = {self.UAV_list}, self.user_list = {self.user_list}')
             # time.sleep(15)
 
-        self.create_action_space() # @ remove_action
+        # self.create_action_space() # @ remove_action biplav
 
         # not doing in initialize_age() as initialize_age() is run every time net is reset so older values will be lost. start_network is run only once
         for i in self.user_list:

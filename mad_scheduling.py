@@ -52,7 +52,7 @@ def find_mad_action(eval_env, slot): ## maximal age difference
     sampleDict_copy = copy.deepcopy(eval_env.UAV_age)
 
     while len(upload_users) < len(eval_env.UAV_age):
-
+        # print(f"upload_users = {upload_users}, sampleDict_copy = {sampleDict_copy}")
         itemMaxValue = max(sampleDict_copy.items(), key=lambda x: x[1])
         listOfKeys = list()
         for key, value in sampleDict_copy.items():
@@ -61,9 +61,12 @@ def find_mad_action(eval_env, slot): ## maximal age difference
 
         remaining_capacity = len(eval_env.UAV_age) - len(upload_users)
         if remaining_capacity > 0:
-            upload_users.extend(random.sample(listOfKeys, len(listOfKeys)))
-        for items in listOfKeys:
-            del sampleDict_copy[items]
+            selected_user = np.max(listOfKeys)
+            # upload_users.extend(random.sample(listOfKeys, len(listOfKeys)))
+            upload_users.append(selected_user)
+            del sampleDict_copy[selected_user]
+        # for items in listOfKeys:
+            # del sampleDict_copy[items]
             
     upload_users = upload_users[:eval_env.RB_total_UL]
     

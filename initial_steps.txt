@@ -1,0 +1,656 @@
+GPUs are []
+experiment is 1 with test_case = True, packet_loss = False, periodic_generation = False
+passed arguments are [('RP', 4, 'new')]
+
+simulation will run for T=5 steps
+
+adj_matrix = 
+
+
+ [[0 0 1 1]
+ [1 0 1 0]
+ [0 1 0 0]
+ [1 1 0 0]]
+BS_location = [500.0, 500.0], user_locations = {10: [478.88, 90.1], 11: [19.82, 549.4], 12: [289.38, 990.02], 13: [58.85, 520.34]}, max distance = 480.1285582008219, min distance = 29.256698378320138, no of senders = 4, no of sender-receiver pairs = 7
+
+
+tx_rx_pairs = [[10, 12], [10, 13], [11, 10], [11, 12], [12, 11], [13, 10], [13, 11]] with length 7 and tx_users = [10, 11, 12, 13] with length 4
+user list = [10, 11, 12, 13]
+UAV list  = [0]
+self.n_users = 4, self.n_UAVs = 1, self.act_coverage = {0: [10, 11, 12, 13]}, self.update_loss_thresh = {10: -1000000, 11: -1000000, 12: -1000000, 13: -1000000}, self.sample_loss_thresh = {(10, 12): -1000000, (10, 13): -1000000, (11, 10): -1000000, (11, 12): -1000000, (12, 11): -1000000, (13, 10): -1000000, (13, 11): -1000000}, self.UAV_list = [0], self.user_list = [10, 11, 12, 13]
+
+eval_net started and age_dist_UAV = {10: [], 11: [], 12: [], 13: []}, age_dist_dest = {(10, 12): [], (10, 13): [], (11, 10): [], (11, 12): [], (12, 11): [], (13, 10): [], (13, 11): []}, tx_attempt_dest = {(10, 12): [], (10, 13): [], (11, 10): [], (11, 12): [], (12, 11): [], (13, 10): [], (13, 11): []}, tx_attempt_UAV = {10: [], 11: [], 12: [], 13: []}
+
+
+eval_net after reset, episode 1 begins with self._state = [0 0 0 0 0 0 0 0 0 0 0] with shape (11,) when CSI_as_state = False, sample_error_in_CSI = False, time_in_state = False
+
+
+
+current episode = 0
+
+slot = 1 for new begins, upload_users = [10], download_user_pairs = [[13, 11], [10, 13]], BS_age = {10: 0, 11: 0, 12: 0, 13: 0}, dest_age = {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}
+
+
+current slot = 1, pair [13, 11] age at the beginning is 0
+pair [13, 11], i.e. user 13 has no data yet at the BS so empty packet will be sent
+pair [13, 11] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[13, 11]]=-1, comp_DL_gen[[13, 11]]=-1, curr_UL_gen[13]=-1, comp_UL_gen[13]=-1, RB_pending_DL[[13, 11]]=0, remaining_RB_DL=2
+pair [13, 11] age at the end is 1. completed DL new pack in same slot. new values-curr_DL_gen[[13, 11]]=-1, comp_DL_gen[[13, 11]]=-1, curr_UL_gen[13]=-1, comp_UL_gen[13]=-1, RB_pending_DL[[13, 11]]=0,assigned_RB_DL = 1, remaining_RB_DL=1
+
+
+current slot = 1, pair [10, 13] age at the beginning is 0
+pair [10, 13], i.e. user 10 has no data yet at the BS so empty packet will be sent
+pair [10, 13] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[10, 13]]=-1, comp_DL_gen[[10, 13]]=-1, curr_UL_gen[10]=-1, comp_UL_gen[10]=-1, RB_pending_DL[[10, 13]]=0, remaining_RB_DL=1
+pair [10, 13] age at the end is 1. completed DL new pack in same slot. new values-curr_DL_gen[[10, 13]]=-1, comp_DL_gen[[10, 13]]=-1, curr_UL_gen[10]=-1, comp_UL_gen[10]=-1, RB_pending_DL[[10, 13]]=0,assigned_RB_DL = 1, remaining_RB_DL=0
+
+
+pair [10, 12] age at the beginning is 0
+download_user_pairs=[[13, 11], [10, 13]], so pair [10, 12] not selected. pair [10, 12] age at the end is 1
+
+
+pair [11, 10] age at the beginning is 0
+download_user_pairs=[[13, 11], [10, 13]], so pair [11, 10] not selected. pair [11, 10] age at the end is 1
+
+
+pair [11, 12] age at the beginning is 0
+download_user_pairs=[[13, 11], [10, 13]], so pair [11, 12] not selected. pair [11, 12] age at the end is 1
+
+
+pair [12, 11] age at the beginning is 0
+download_user_pairs=[[13, 11], [10, 13]], so pair [12, 11] not selected. pair [12, 11] age at the end is 1
+
+
+pair [13, 10] age at the beginning is 0
+download_user_pairs=[[13, 11], [10, 13]], so pair [13, 10] not selected. pair [13, 10] age at the end is 1
+
+
+user 10 age at the beginning is 0 with period 1
+user 10 completed UL in its prev attempt. old values-curr_UL_gen[10] = -1, comp_UL_gen[10] = -1, RB_pending_UL[10] = 0, remaining_RB_UL = 1.
+last_pack_generated = 1
+user 10 age at the end is 0.0. new packet fully UL in same slot-new values curr_UL_gen[10] = 1, comp_UL_gen[10] = 1, RB_pending_UL[10] = 0, assigned_RB_UL = 1, remaining_RB_UL = 0
+
+
+user 11 age at the beginning is 0
+upload_users=[10], so user 11 not selected. user 11 age at the end is 1
+
+
+user 12 age at the beginning is 0
+upload_users=[10], so user 12 not selected. user 12 age at the end is 1
+
+
+user 13 age at the beginning is 0
+upload_users=[10], so user 13 not selected. user 13 age at the end is 1
+
+
+slot 1 over. curr_UL_gen = {10: 1, 11: -1, 12: -1, 13: -1}, curr_DL_gen = {(10, 12): -1, (10, 13): -1, (11, 10): -1, (11, 12): -1, (12, 11): -1, (13, 10): -1, (13, 11): -1}, comp_UL_gen = {10: 1, 11: -1, 12: -1, 13: -1}, comp_DL_gen = {(10, 12): -1, (10, 13): -1, (11, 10): -1, (11, 12): -1, (12, 11): -1, (13, 10): -1, (13, 11): -1}, RB_pending_UL = {10: 0, 11: 0, 12: 0, 13: 0}, RB_pending_DL = {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}, BS_age = {10: 0.0, 11: 1, 12: 1, 13: 1}, dest_age = {(10, 12): 1, (10, 13): 1, (11, 10): 1, (11, 12): 1, (12, 11): 1, (13, 10): 1, (13, 11): 1}
+
+no informative packet pending
+
+
+current episode = 0
+
+slot = 2 for new begins, upload_users = [11], download_user_pairs = [[10, 12], [10, 13]], BS_age = {10: 0.0, 11: 1, 12: 1, 13: 1}, dest_age = {(10, 12): 1, (10, 13): 1, (11, 10): 1, (11, 12): 1, (12, 11): 1, (13, 10): 1, (13, 11): 1}
+
+
+current slot = 2, pair [10, 12] age at the beginning is 1
+pair [10, 12] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[10, 12]]=-1, comp_DL_gen[[10, 12]]=-1, curr_UL_gen[10]=1, comp_UL_gen[10]=1, RB_pending_DL[[10, 12]]=0, remaining_RB_DL=2
+pair [10, 12] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[10, 12]]=1, comp_DL_gen[[10, 12]]=1, curr_UL_gen[10]=1, comp_UL_gen[10]=1, RB_pending_DL[[10, 12]]=0,assigned_RB_DL = 1, remaining_RB_DL=1
+
+
+current slot = 2, pair [10, 13] age at the beginning is 1
+pair [10, 13] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[10, 13]]=-1, comp_DL_gen[[10, 13]]=-1, curr_UL_gen[10]=1, comp_UL_gen[10]=1, RB_pending_DL[[10, 13]]=0, remaining_RB_DL=1
+pair [10, 13] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[10, 13]]=1, comp_DL_gen[[10, 13]]=1, curr_UL_gen[10]=1, comp_UL_gen[10]=1, RB_pending_DL[[10, 13]]=0,assigned_RB_DL = 1, remaining_RB_DL=0
+
+
+pair [11, 10] age at the beginning is 1
+download_user_pairs=[[10, 12], [10, 13]], so pair [11, 10] not selected. pair [11, 10] age at the end is 2
+
+
+pair [11, 12] age at the beginning is 1
+download_user_pairs=[[10, 12], [10, 13]], so pair [11, 12] not selected. pair [11, 12] age at the end is 2
+
+
+pair [12, 11] age at the beginning is 1
+download_user_pairs=[[10, 12], [10, 13]], so pair [12, 11] not selected. pair [12, 11] age at the end is 2
+
+
+pair [13, 10] age at the beginning is 1
+download_user_pairs=[[10, 12], [10, 13]], so pair [13, 10] not selected. pair [13, 10] age at the end is 2
+
+
+pair [13, 11] age at the beginning is 1
+download_user_pairs=[[10, 12], [10, 13]], so pair [13, 11] not selected. pair [13, 11] age at the end is 2
+
+
+user 11 age at the beginning is 1 with period 1
+user 11 completed UL in its prev attempt. old values-curr_UL_gen[11] = -1, comp_UL_gen[11] = -1, RB_pending_UL[11] = 0, remaining_RB_UL = 1.
+last_pack_generated = 2
+user 11 age at the end is 0.0. new packet fully UL in same slot-new values curr_UL_gen[11] = 2, comp_UL_gen[11] = 2, RB_pending_UL[11] = 0, assigned_RB_UL = 1, remaining_RB_UL = 0
+
+
+user 10 age at the beginning is 0.0
+upload_users=[11], so user 10 not selected. user 10 age at the end is 1.0
+
+
+user 12 age at the beginning is 1
+upload_users=[11], so user 12 not selected. user 12 age at the end is 2
+
+
+user 13 age at the beginning is 1
+upload_users=[11], so user 13 not selected. user 13 age at the end is 2
+
+
+slot 2 over. curr_UL_gen = {10: 1, 11: 2, 12: -1, 13: -1}, curr_DL_gen = {(10, 12): 1, (10, 13): 1, (11, 10): -1, (11, 12): -1, (12, 11): -1, (13, 10): -1, (13, 11): -1}, comp_UL_gen = {10: 1, 11: 2, 12: -1, 13: -1}, comp_DL_gen = {(10, 12): 1, (10, 13): 1, (11, 10): -1, (11, 12): -1, (12, 11): -1, (13, 10): -1, (13, 11): -1}, RB_pending_UL = {10: 0, 11: 0, 12: 0, 13: 0}, RB_pending_DL = {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}, BS_age = {10: 1.0, 11: 0.0, 12: 2, 13: 2}, dest_age = {(10, 12): 1.0, (10, 13): 1.0, (11, 10): 2, (11, 12): 2, (12, 11): 2, (13, 10): 2, (13, 11): 2}
+
+no informative packet pending
+
+
+current episode = 0
+
+slot = 3 for new begins, upload_users = [12], download_user_pairs = [[11, 10], [11, 12]], BS_age = {10: 1.0, 11: 0.0, 12: 2, 13: 2}, dest_age = {(10, 12): 1.0, (10, 13): 1.0, (11, 10): 2, (11, 12): 2, (12, 11): 2, (13, 10): 2, (13, 11): 2}
+
+
+current slot = 3, pair [11, 10] age at the beginning is 2
+pair [11, 10] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[11, 10]]=-1, comp_DL_gen[[11, 10]]=-1, curr_UL_gen[11]=2, comp_UL_gen[11]=2, RB_pending_DL[[11, 10]]=0, remaining_RB_DL=2
+pair [11, 10] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[11, 10]]=2, comp_DL_gen[[11, 10]]=2, curr_UL_gen[11]=2, comp_UL_gen[11]=2, RB_pending_DL[[11, 10]]=0,assigned_RB_DL = 1, remaining_RB_DL=1
+
+
+current slot = 3, pair [11, 12] age at the beginning is 2
+pair [11, 12] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[11, 12]]=-1, comp_DL_gen[[11, 12]]=-1, curr_UL_gen[11]=2, comp_UL_gen[11]=2, RB_pending_DL[[11, 12]]=0, remaining_RB_DL=1
+pair [11, 12] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[11, 12]]=2, comp_DL_gen[[11, 12]]=2, curr_UL_gen[11]=2, comp_UL_gen[11]=2, RB_pending_DL[[11, 12]]=0,assigned_RB_DL = 1, remaining_RB_DL=0
+
+
+pair [10, 12] age at the beginning is 1.0
+download_user_pairs=[[11, 10], [11, 12]], so pair [10, 12] not selected. pair [10, 12] age at the end is 2.0
+
+
+pair [10, 13] age at the beginning is 1.0
+download_user_pairs=[[11, 10], [11, 12]], so pair [10, 13] not selected. pair [10, 13] age at the end is 2.0
+
+
+pair [12, 11] age at the beginning is 2
+download_user_pairs=[[11, 10], [11, 12]], so pair [12, 11] not selected. pair [12, 11] age at the end is 3
+
+
+pair [13, 10] age at the beginning is 2
+download_user_pairs=[[11, 10], [11, 12]], so pair [13, 10] not selected. pair [13, 10] age at the end is 3
+
+
+pair [13, 11] age at the beginning is 2
+download_user_pairs=[[11, 10], [11, 12]], so pair [13, 11] not selected. pair [13, 11] age at the end is 3
+
+
+user 12 age at the beginning is 2 with period 1
+user 12 completed UL in its prev attempt. old values-curr_UL_gen[12] = -1, comp_UL_gen[12] = -1, RB_pending_UL[12] = 0, remaining_RB_UL = 1.
+last_pack_generated = 3
+user 12 age at the end is 0.0. new packet fully UL in same slot-new values curr_UL_gen[12] = 3, comp_UL_gen[12] = 3, RB_pending_UL[12] = 0, assigned_RB_UL = 1, remaining_RB_UL = 0
+
+
+user 10 age at the beginning is 1.0
+upload_users=[12], so user 10 not selected. user 10 age at the end is 2.0
+
+
+user 11 age at the beginning is 0.0
+upload_users=[12], so user 11 not selected. user 11 age at the end is 1.0
+
+
+user 13 age at the beginning is 2
+upload_users=[12], so user 13 not selected. user 13 age at the end is 3
+
+
+slot 3 over. curr_UL_gen = {10: 1, 11: 2, 12: 3, 13: -1}, curr_DL_gen = {(10, 12): 1, (10, 13): 1, (11, 10): 2, (11, 12): 2, (12, 11): -1, (13, 10): -1, (13, 11): -1}, comp_UL_gen = {10: 1, 11: 2, 12: 3, 13: -1}, comp_DL_gen = {(10, 12): 1, (10, 13): 1, (11, 10): 2, (11, 12): 2, (12, 11): -1, (13, 10): -1, (13, 11): -1}, RB_pending_UL = {10: 0, 11: 0, 12: 0, 13: 0}, RB_pending_DL = {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}, BS_age = {10: 2.0, 11: 1.0, 12: 0.0, 13: 3}, dest_age = {(10, 12): 2.0, (10, 13): 2.0, (11, 10): 1.0, (11, 12): 1.0, (12, 11): 3, (13, 10): 3, (13, 11): 3}
+
+no informative packet pending
+
+
+current episode = 0
+
+slot = 4 for new begins, upload_users = [13], download_user_pairs = [[12, 11], [13, 10]], BS_age = {10: 2.0, 11: 1.0, 12: 0.0, 13: 3}, dest_age = {(10, 12): 2.0, (10, 13): 2.0, (11, 10): 1.0, (11, 12): 1.0, (12, 11): 3, (13, 10): 3, (13, 11): 3}
+
+
+current slot = 4, pair [12, 11] age at the beginning is 3
+pair [12, 11] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[12, 11]]=-1, comp_DL_gen[[12, 11]]=-1, curr_UL_gen[12]=3, comp_UL_gen[12]=3, RB_pending_DL[[12, 11]]=0, remaining_RB_DL=2
+pair [12, 11] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[12, 11]]=3, comp_DL_gen[[12, 11]]=3, curr_UL_gen[12]=3, comp_UL_gen[12]=3, RB_pending_DL[[12, 11]]=0,assigned_RB_DL = 1, remaining_RB_DL=1
+
+
+current slot = 4, pair [13, 10] age at the beginning is 3
+pair [13, 10], i.e. user 13 has no data yet at the BS so empty packet will be sent
+pair [13, 10] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[13, 10]]=-1, comp_DL_gen[[13, 10]]=-1, curr_UL_gen[13]=-1, comp_UL_gen[13]=-1, RB_pending_DL[[13, 10]]=0, remaining_RB_DL=1
+pair [13, 10] age at the end is 4. completed DL new pack in same slot. new values-curr_DL_gen[[13, 10]]=-1, comp_DL_gen[[13, 10]]=-1, curr_UL_gen[13]=-1, comp_UL_gen[13]=-1, RB_pending_DL[[13, 10]]=0,assigned_RB_DL = 1, remaining_RB_DL=0
+
+
+pair [10, 12] age at the beginning is 2.0
+download_user_pairs=[[12, 11], [13, 10]], so pair [10, 12] not selected. pair [10, 12] age at the end is 3.0
+
+
+pair [10, 13] age at the beginning is 2.0
+download_user_pairs=[[12, 11], [13, 10]], so pair [10, 13] not selected. pair [10, 13] age at the end is 3.0
+
+
+pair [11, 10] age at the beginning is 1.0
+download_user_pairs=[[12, 11], [13, 10]], so pair [11, 10] not selected. pair [11, 10] age at the end is 2.0
+
+
+pair [11, 12] age at the beginning is 1.0
+download_user_pairs=[[12, 11], [13, 10]], so pair [11, 12] not selected. pair [11, 12] age at the end is 2.0
+
+
+pair [13, 11] age at the beginning is 3
+download_user_pairs=[[12, 11], [13, 10]], so pair [13, 11] not selected. pair [13, 11] age at the end is 4
+
+
+user 13 age at the beginning is 3 with period 1
+user 13 completed UL in its prev attempt. old values-curr_UL_gen[13] = -1, comp_UL_gen[13] = -1, RB_pending_UL[13] = 0, remaining_RB_UL = 1.
+last_pack_generated = 4
+user 13 age at the end is 0.0. new packet fully UL in same slot-new values curr_UL_gen[13] = 4, comp_UL_gen[13] = 4, RB_pending_UL[13] = 0, assigned_RB_UL = 1, remaining_RB_UL = 0
+
+
+user 10 age at the beginning is 2.0
+upload_users=[13], so user 10 not selected. user 10 age at the end is 3.0
+
+
+user 11 age at the beginning is 1.0
+upload_users=[13], so user 11 not selected. user 11 age at the end is 2.0
+
+
+user 12 age at the beginning is 0.0
+upload_users=[13], so user 12 not selected. user 12 age at the end is 1.0
+
+
+slot 4 over. curr_UL_gen = {10: 1, 11: 2, 12: 3, 13: 4}, curr_DL_gen = {(10, 12): 1, (10, 13): 1, (11, 10): 2, (11, 12): 2, (12, 11): 3, (13, 10): -1, (13, 11): -1}, comp_UL_gen = {10: 1, 11: 2, 12: 3, 13: 4}, comp_DL_gen = {(10, 12): 1, (10, 13): 1, (11, 10): 2, (11, 12): 2, (12, 11): 3, (13, 10): -1, (13, 11): -1}, RB_pending_UL = {10: 0, 11: 0, 12: 0, 13: 0}, RB_pending_DL = {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}, BS_age = {10: 3.0, 11: 2.0, 12: 1.0, 13: 0.0}, dest_age = {(10, 12): 3.0, (10, 13): 3.0, (11, 10): 2.0, (11, 12): 2.0, (12, 11): 1.0, (13, 10): 4, (13, 11): 4}
+
+no informative packet pending
+
+
+current episode = 0
+
+slot = 5 for new begins, upload_users = [10], download_user_pairs = [[13, 11], [13, 10]], BS_age = {10: 3.0, 11: 2.0, 12: 1.0, 13: 0.0}, dest_age = {(10, 12): 3.0, (10, 13): 3.0, (11, 10): 2.0, (11, 12): 2.0, (12, 11): 1.0, (13, 10): 4, (13, 11): 4}
+
+
+current slot = 5, pair [13, 11] age at the beginning is 4
+pair [13, 11] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[13, 11]]=-1, comp_DL_gen[[13, 11]]=-1, curr_UL_gen[13]=4, comp_UL_gen[13]=4, RB_pending_DL[[13, 11]]=0, remaining_RB_DL=2
+pair [13, 11] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[13, 11]]=4, comp_DL_gen[[13, 11]]=4, curr_UL_gen[13]=4, comp_UL_gen[13]=4, RB_pending_DL[[13, 11]]=0,assigned_RB_DL = 1, remaining_RB_DL=1
+
+
+current slot = 5, pair [13, 10] age at the beginning is 4
+pair [13, 10] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[13, 10]]=-1, comp_DL_gen[[13, 10]]=-1, curr_UL_gen[13]=4, comp_UL_gen[13]=4, RB_pending_DL[[13, 10]]=0, remaining_RB_DL=1
+pair [13, 10] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[13, 10]]=4, comp_DL_gen[[13, 10]]=4, curr_UL_gen[13]=4, comp_UL_gen[13]=4, RB_pending_DL[[13, 10]]=0,assigned_RB_DL = 1, remaining_RB_DL=0
+
+
+pair [10, 12] age at the beginning is 3.0
+download_user_pairs=[[13, 11], [13, 10]], so pair [10, 12] not selected. pair [10, 12] age at the end is 4.0
+
+
+pair [10, 13] age at the beginning is 3.0
+download_user_pairs=[[13, 11], [13, 10]], so pair [10, 13] not selected. pair [10, 13] age at the end is 4.0
+
+
+pair [11, 10] age at the beginning is 2.0
+download_user_pairs=[[13, 11], [13, 10]], so pair [11, 10] not selected. pair [11, 10] age at the end is 3.0
+
+
+pair [11, 12] age at the beginning is 2.0
+download_user_pairs=[[13, 11], [13, 10]], so pair [11, 12] not selected. pair [11, 12] age at the end is 3.0
+
+
+pair [12, 11] age at the beginning is 1.0
+download_user_pairs=[[13, 11], [13, 10]], so pair [12, 11] not selected. pair [12, 11] age at the end is 2.0
+
+
+user 10 age at the beginning is 3.0 with period 1
+user 10 completed UL in its prev attempt. old values-curr_UL_gen[10] = 1, comp_UL_gen[10] = 1, RB_pending_UL[10] = 0, remaining_RB_UL = 1.
+last_pack_generated = 5
+user 10 age at the end is 0.0. new packet fully UL in same slot-new values curr_UL_gen[10] = 5, comp_UL_gen[10] = 5, RB_pending_UL[10] = 0, assigned_RB_UL = 1, remaining_RB_UL = 0
+
+
+user 11 age at the beginning is 2.0
+upload_users=[10], so user 11 not selected. user 11 age at the end is 3.0
+
+
+user 12 age at the beginning is 1.0
+upload_users=[10], so user 12 not selected. user 12 age at the end is 2.0
+
+
+user 13 age at the beginning is 0.0
+upload_users=[10], so user 13 not selected. user 13 age at the end is 1.0
+
+
+slot 5 over. curr_UL_gen = {10: 5, 11: 2, 12: 3, 13: 4}, curr_DL_gen = {(10, 12): 1, (10, 13): 1, (11, 10): 2, (11, 12): 2, (12, 11): 3, (13, 10): 4, (13, 11): 4}, comp_UL_gen = {10: 5, 11: 2, 12: 3, 13: 4}, comp_DL_gen = {(10, 12): 1, (10, 13): 1, (11, 10): 2, (11, 12): 2, (12, 11): 3, (13, 10): 4, (13, 11): 4}, RB_pending_UL = {10: 0, 11: 0, 12: 0, 13: 0}, RB_pending_DL = {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}, BS_age = {10: 0.0, 11: 3.0, 12: 2.0, 13: 1.0}, dest_age = {(10, 12): 4.0, (10, 13): 4.0, (11, 10): 3.0, (11, 12): 3.0, (12, 11): 2.0, (13, 10): 1.0, (13, 11): 1.0}
+
+no informative packet pending
+
+new scheduling  RP  placement,  4  users. MEAN of final_step_rewards =  19.0 . MEAN of overall_ep_reward =  71.0  MIN and MAX of overall_ep_reward =  71.0 ,  71.0  ... MEAN of overall_ep_peak_reward =  14.0  MIN and MAX of overall_ep_peak_reward =  14.0 ,  14.0 . Similarly for final_step_UAV_rewards - MEAN =  {6.0} , MIN and MAX of final_step_UAV_rewards =  6.0 ,  6.0  end with final state of  [0 0 0 0 0 0 0 0 0 0 0]  with shape  (11,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
+
+
+_____________________________________________________________________________________________________________
+
+GPUs are []
+experiment is 1 with test_case = True, packet_loss = False, periodic_generation = False
+passed arguments are [('RP', 4, 'mad')]
+
+simulation will run for T=5 steps
+
+adj_matrix = 
+
+
+ [[0 0 1 1]
+ [1 0 1 0]
+ [0 1 0 0]
+ [1 1 0 0]]
+BS_location = [500.0, 500.0], user_locations = {10: [478.88, 90.1], 11: [19.82, 549.4], 12: [289.38, 990.02], 13: [58.85, 520.34]}, max distance = 480.1285582008219, min distance = 29.256698378320138, no of senders = 4, no of sender-receiver pairs = 7
+
+
+tx_rx_pairs = [[10, 12], [10, 13], [11, 10], [11, 12], [12, 11], [13, 10], [13, 11]] with length 7 and tx_users = [10, 11, 12, 13] with length 4
+user list = [10, 11, 12, 13]
+UAV list  = [0]
+self.n_users = 4, self.n_UAVs = 1, self.act_coverage = {0: [10, 11, 12, 13]}, self.update_loss_thresh = {10: -1000000, 11: -1000000, 12: -1000000, 13: -1000000}, self.sample_loss_thresh = {(10, 12): -1000000, (10, 13): -1000000, (11, 10): -1000000, (11, 12): -1000000, (12, 11): -1000000, (13, 10): -1000000, (13, 11): -1000000}, self.UAV_list = [0], self.user_list = [10, 11, 12, 13]
+
+eval_net started and age_dist_UAV = {10: [], 11: [], 12: [], 13: []}, age_dist_dest = {(10, 12): [], (10, 13): [], (11, 10): [], (11, 12): [], (12, 11): [], (13, 10): [], (13, 11): []}, tx_attempt_dest = {(10, 12): [], (10, 13): [], (11, 10): [], (11, 12): [], (12, 11): [], (13, 10): [], (13, 11): []}, tx_attempt_UAV = {10: [], 11: [], 12: [], 13: []}
+
+
+eval_net after reset, episode 1 begins with self._state = [0 0 0 0 0 0 0 0 0 0 0] with shape (11,) when CSI_as_state = False, sample_error_in_CSI = False, time_in_state = False
+
+
+slot 1 begins. age difference is {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}, age at dest is {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}, age at UAV is {10: 0, 11: 0, 12: 0, 13: 0}.
+
+
+current episode = 0
+
+slot = 1 for MAD begins, upload_users = [12], download_user_pairs = [[13, 11], [10, 13]], BS_age = {10: 0, 11: 0, 12: 0, 13: 0}, dest_age = {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}
+
+
+current slot = 1, pair [13, 11] age at the beginning is 0
+pair [13, 11], i.e. user 13 has no data yet at the BS so empty packet will be sent
+pair [13, 11] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[13, 11]]=-1, comp_DL_gen[[13, 11]]=-1, curr_UL_gen[13]=-1, comp_UL_gen[13]=-1, RB_pending_DL[[13, 11]]=0, remaining_RB_DL=2
+pair [13, 11] age at the end is 1. completed DL new pack in same slot. new values-curr_DL_gen[[13, 11]]=-1, comp_DL_gen[[13, 11]]=-1, curr_UL_gen[13]=-1, comp_UL_gen[13]=-1, RB_pending_DL[[13, 11]]=0,assigned_RB_DL = 1, remaining_RB_DL=1
+
+
+current slot = 1, pair [10, 13] age at the beginning is 0
+pair [10, 13], i.e. user 10 has no data yet at the BS so empty packet will be sent
+pair [10, 13] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[10, 13]]=-1, comp_DL_gen[[10, 13]]=-1, curr_UL_gen[10]=-1, comp_UL_gen[10]=-1, RB_pending_DL[[10, 13]]=0, remaining_RB_DL=1
+pair [10, 13] age at the end is 1. completed DL new pack in same slot. new values-curr_DL_gen[[10, 13]]=-1, comp_DL_gen[[10, 13]]=-1, curr_UL_gen[10]=-1, comp_UL_gen[10]=-1, RB_pending_DL[[10, 13]]=0,assigned_RB_DL = 1, remaining_RB_DL=0
+
+
+pair [10, 12] age at the beginning is 0
+download_user_pairs=[[13, 11], [10, 13]], so pair [10, 12] not selected. pair [10, 12] age at the end is 1
+
+
+pair [11, 10] age at the beginning is 0
+download_user_pairs=[[13, 11], [10, 13]], so pair [11, 10] not selected. pair [11, 10] age at the end is 1
+
+
+pair [11, 12] age at the beginning is 0
+download_user_pairs=[[13, 11], [10, 13]], so pair [11, 12] not selected. pair [11, 12] age at the end is 1
+
+
+pair [12, 11] age at the beginning is 0
+download_user_pairs=[[13, 11], [10, 13]], so pair [12, 11] not selected. pair [12, 11] age at the end is 1
+
+
+pair [13, 10] age at the beginning is 0
+download_user_pairs=[[13, 11], [10, 13]], so pair [13, 10] not selected. pair [13, 10] age at the end is 1
+
+
+user 12 age at the beginning is 0 with period 1
+user 12 completed UL in its prev attempt. old values-curr_UL_gen[12] = -1, comp_UL_gen[12] = -1, RB_pending_UL[12] = 0, remaining_RB_UL = 1.
+last_pack_generated = 1
+user 12 age at the end is 0.0. new packet fully UL in same slot-new values curr_UL_gen[12] = 1, comp_UL_gen[12] = 1, RB_pending_UL[12] = 0, assigned_RB_UL = 1, remaining_RB_UL = 0
+
+
+user 10 age at the beginning is 0
+upload_users=[12], so user 10 not selected. user 10 age at the end is 1
+
+
+user 11 age at the beginning is 0
+upload_users=[12], so user 11 not selected. user 11 age at the end is 1
+
+
+user 13 age at the beginning is 0
+upload_users=[12], so user 13 not selected. user 13 age at the end is 1
+
+
+slot 1 over. curr_UL_gen = {10: -1, 11: -1, 12: 1, 13: -1}, curr_DL_gen = {(10, 12): -1, (10, 13): -1, (11, 10): -1, (11, 12): -1, (12, 11): -1, (13, 10): -1, (13, 11): -1}, comp_UL_gen = {10: -1, 11: -1, 12: 1, 13: -1}, comp_DL_gen = {(10, 12): -1, (10, 13): -1, (11, 10): -1, (11, 12): -1, (12, 11): -1, (13, 10): -1, (13, 11): -1}, RB_pending_UL = {10: 0, 11: 0, 12: 0, 13: 0}, RB_pending_DL = {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}, BS_age = {10: 1, 11: 1, 12: 0.0, 13: 1}, dest_age = {(10, 12): 1, (10, 13): 1, (11, 10): 1, (11, 12): 1, (12, 11): 1, (13, 10): 1, (13, 11): 1}
+
+no informative packet pending
+
+slot 2 begins. age difference is {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 1.0, (13, 10): 0, (13, 11): 0}, age at dest is {(10, 12): 1, (10, 13): 1, (11, 10): 1, (11, 12): 1, (12, 11): 1, (13, 10): 1, (13, 11): 1}, age at UAV is {10: 1, 11: 1, 12: 0.0, 13: 1}.
+
+
+current episode = 0
+
+slot = 2 for MAD begins, upload_users = [13], download_user_pairs = [[12, 11], [13, 11]], BS_age = {10: 1, 11: 1, 12: 0.0, 13: 1}, dest_age = {(10, 12): 1, (10, 13): 1, (11, 10): 1, (11, 12): 1, (12, 11): 1, (13, 10): 1, (13, 11): 1}
+
+
+current slot = 2, pair [12, 11] age at the beginning is 1
+pair [12, 11] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[12, 11]]=-1, comp_DL_gen[[12, 11]]=-1, curr_UL_gen[12]=1, comp_UL_gen[12]=1, RB_pending_DL[[12, 11]]=0, remaining_RB_DL=2
+pair [12, 11] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[12, 11]]=1, comp_DL_gen[[12, 11]]=1, curr_UL_gen[12]=1, comp_UL_gen[12]=1, RB_pending_DL[[12, 11]]=0,assigned_RB_DL = 1, remaining_RB_DL=1
+
+
+current slot = 2, pair [13, 11] age at the beginning is 1
+pair [13, 11], i.e. user 13 has no data yet at the BS so empty packet will be sent
+pair [13, 11] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[13, 11]]=-1, comp_DL_gen[[13, 11]]=-1, curr_UL_gen[13]=-1, comp_UL_gen[13]=-1, RB_pending_DL[[13, 11]]=0, remaining_RB_DL=1
+pair [13, 11] age at the end is 2. completed DL new pack in same slot. new values-curr_DL_gen[[13, 11]]=-1, comp_DL_gen[[13, 11]]=-1, curr_UL_gen[13]=-1, comp_UL_gen[13]=-1, RB_pending_DL[[13, 11]]=0,assigned_RB_DL = 1, remaining_RB_DL=0
+
+
+pair [10, 12] age at the beginning is 1
+download_user_pairs=[[12, 11], [13, 11]], so pair [10, 12] not selected. pair [10, 12] age at the end is 2
+
+
+pair [10, 13] age at the beginning is 1
+download_user_pairs=[[12, 11], [13, 11]], so pair [10, 13] not selected. pair [10, 13] age at the end is 2
+
+
+pair [11, 10] age at the beginning is 1
+download_user_pairs=[[12, 11], [13, 11]], so pair [11, 10] not selected. pair [11, 10] age at the end is 2
+
+
+pair [11, 12] age at the beginning is 1
+download_user_pairs=[[12, 11], [13, 11]], so pair [11, 12] not selected. pair [11, 12] age at the end is 2
+
+
+pair [13, 10] age at the beginning is 1
+download_user_pairs=[[12, 11], [13, 11]], so pair [13, 10] not selected. pair [13, 10] age at the end is 2
+
+
+user 13 age at the beginning is 1 with period 1
+user 13 completed UL in its prev attempt. old values-curr_UL_gen[13] = -1, comp_UL_gen[13] = -1, RB_pending_UL[13] = 0, remaining_RB_UL = 1.
+last_pack_generated = 2
+user 13 age at the end is 0.0. new packet fully UL in same slot-new values curr_UL_gen[13] = 2, comp_UL_gen[13] = 2, RB_pending_UL[13] = 0, assigned_RB_UL = 1, remaining_RB_UL = 0
+
+
+user 10 age at the beginning is 1
+upload_users=[13], so user 10 not selected. user 10 age at the end is 2
+
+
+user 11 age at the beginning is 1
+upload_users=[13], so user 11 not selected. user 11 age at the end is 2
+
+
+user 12 age at the beginning is 0.0
+upload_users=[13], so user 12 not selected. user 12 age at the end is 1.0
+
+
+slot 2 over. curr_UL_gen = {10: -1, 11: -1, 12: 1, 13: 2}, curr_DL_gen = {(10, 12): -1, (10, 13): -1, (11, 10): -1, (11, 12): -1, (12, 11): 1, (13, 10): -1, (13, 11): -1}, comp_UL_gen = {10: -1, 11: -1, 12: 1, 13: 2}, comp_DL_gen = {(10, 12): -1, (10, 13): -1, (11, 10): -1, (11, 12): -1, (12, 11): 1, (13, 10): -1, (13, 11): -1}, RB_pending_UL = {10: 0, 11: 0, 12: 0, 13: 0}, RB_pending_DL = {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}, BS_age = {10: 2, 11: 2, 12: 1.0, 13: 0.0}, dest_age = {(10, 12): 2, (10, 13): 2, (11, 10): 2, (11, 12): 2, (12, 11): 1.0, (13, 10): 2, (13, 11): 2}
+
+no informative packet pending
+
+slot 3 begins. age difference is {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0.0, (13, 10): 2.0, (13, 11): 2.0}, age at dest is {(10, 12): 2, (10, 13): 2, (11, 10): 2, (11, 12): 2, (12, 11): 1.0, (13, 10): 2, (13, 11): 2}, age at UAV is {10: 2, 11: 2, 12: 1.0, 13: 0.0}.
+
+
+current episode = 0
+
+slot = 3 for MAD begins, upload_users = [10], download_user_pairs = [[13, 10], [13, 11]], BS_age = {10: 2, 11: 2, 12: 1.0, 13: 0.0}, dest_age = {(10, 12): 2, (10, 13): 2, (11, 10): 2, (11, 12): 2, (12, 11): 1.0, (13, 10): 2, (13, 11): 2}
+
+
+current slot = 3, pair [13, 10] age at the beginning is 2
+pair [13, 10] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[13, 10]]=-1, comp_DL_gen[[13, 10]]=-1, curr_UL_gen[13]=2, comp_UL_gen[13]=2, RB_pending_DL[[13, 10]]=0, remaining_RB_DL=2
+pair [13, 10] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[13, 10]]=2, comp_DL_gen[[13, 10]]=2, curr_UL_gen[13]=2, comp_UL_gen[13]=2, RB_pending_DL[[13, 10]]=0,assigned_RB_DL = 1, remaining_RB_DL=1
+
+
+current slot = 3, pair [13, 11] age at the beginning is 2
+pair [13, 11] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[13, 11]]=-1, comp_DL_gen[[13, 11]]=-1, curr_UL_gen[13]=2, comp_UL_gen[13]=2, RB_pending_DL[[13, 11]]=0, remaining_RB_DL=1
+pair [13, 11] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[13, 11]]=2, comp_DL_gen[[13, 11]]=2, curr_UL_gen[13]=2, comp_UL_gen[13]=2, RB_pending_DL[[13, 11]]=0,assigned_RB_DL = 1, remaining_RB_DL=0
+
+
+pair [10, 12] age at the beginning is 2
+download_user_pairs=[[13, 10], [13, 11]], so pair [10, 12] not selected. pair [10, 12] age at the end is 3
+
+
+pair [10, 13] age at the beginning is 2
+download_user_pairs=[[13, 10], [13, 11]], so pair [10, 13] not selected. pair [10, 13] age at the end is 3
+
+
+pair [11, 10] age at the beginning is 2
+download_user_pairs=[[13, 10], [13, 11]], so pair [11, 10] not selected. pair [11, 10] age at the end is 3
+
+
+pair [11, 12] age at the beginning is 2
+download_user_pairs=[[13, 10], [13, 11]], so pair [11, 12] not selected. pair [11, 12] age at the end is 3
+
+
+pair [12, 11] age at the beginning is 1.0
+download_user_pairs=[[13, 10], [13, 11]], so pair [12, 11] not selected. pair [12, 11] age at the end is 2.0
+
+
+user 10 age at the beginning is 2 with period 1
+user 10 completed UL in its prev attempt. old values-curr_UL_gen[10] = -1, comp_UL_gen[10] = -1, RB_pending_UL[10] = 0, remaining_RB_UL = 1.
+last_pack_generated = 3
+user 10 age at the end is 0.0. new packet fully UL in same slot-new values curr_UL_gen[10] = 3, comp_UL_gen[10] = 3, RB_pending_UL[10] = 0, assigned_RB_UL = 1, remaining_RB_UL = 0
+
+
+user 11 age at the beginning is 2
+upload_users=[10], so user 11 not selected. user 11 age at the end is 3
+
+
+user 12 age at the beginning is 1.0
+upload_users=[10], so user 12 not selected. user 12 age at the end is 2.0
+
+
+user 13 age at the beginning is 0.0
+upload_users=[10], so user 13 not selected. user 13 age at the end is 1.0
+
+
+slot 3 over. curr_UL_gen = {10: 3, 11: -1, 12: 1, 13: 2}, curr_DL_gen = {(10, 12): -1, (10, 13): -1, (11, 10): -1, (11, 12): -1, (12, 11): 1, (13, 10): 2, (13, 11): 2}, comp_UL_gen = {10: 3, 11: -1, 12: 1, 13: 2}, comp_DL_gen = {(10, 12): -1, (10, 13): -1, (11, 10): -1, (11, 12): -1, (12, 11): 1, (13, 10): 2, (13, 11): 2}, RB_pending_UL = {10: 0, 11: 0, 12: 0, 13: 0}, RB_pending_DL = {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}, BS_age = {10: 0.0, 11: 3, 12: 2.0, 13: 1.0}, dest_age = {(10, 12): 3, (10, 13): 3, (11, 10): 3, (11, 12): 3, (12, 11): 2.0, (13, 10): 1.0, (13, 11): 1.0}
+
+no informative packet pending
+
+slot 4 begins. age difference is {(10, 12): 3.0, (10, 13): 3.0, (11, 10): 0, (11, 12): 0, (12, 11): 0.0, (13, 10): 0.0, (13, 11): 0.0}, age at dest is {(10, 12): 3, (10, 13): 3, (11, 10): 3, (11, 12): 3, (12, 11): 2.0, (13, 10): 1.0, (13, 11): 1.0}, age at UAV is {10: 0.0, 11: 3, 12: 2.0, 13: 1.0}.
+
+
+current episode = 0
+
+slot = 4 for MAD begins, upload_users = [11], download_user_pairs = [[10, 12], [10, 13]], BS_age = {10: 0.0, 11: 3, 12: 2.0, 13: 1.0}, dest_age = {(10, 12): 3, (10, 13): 3, (11, 10): 3, (11, 12): 3, (12, 11): 2.0, (13, 10): 1.0, (13, 11): 1.0}
+
+
+current slot = 4, pair [10, 12] age at the beginning is 3
+pair [10, 12] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[10, 12]]=-1, comp_DL_gen[[10, 12]]=-1, curr_UL_gen[10]=3, comp_UL_gen[10]=3, RB_pending_DL[[10, 12]]=0, remaining_RB_DL=2
+pair [10, 12] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[10, 12]]=3, comp_DL_gen[[10, 12]]=3, curr_UL_gen[10]=3, comp_UL_gen[10]=3, RB_pending_DL[[10, 12]]=0,assigned_RB_DL = 1, remaining_RB_DL=1
+
+
+current slot = 4, pair [10, 13] age at the beginning is 3
+pair [10, 13] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[10, 13]]=-1, comp_DL_gen[[10, 13]]=-1, curr_UL_gen[10]=3, comp_UL_gen[10]=3, RB_pending_DL[[10, 13]]=0, remaining_RB_DL=1
+pair [10, 13] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[10, 13]]=3, comp_DL_gen[[10, 13]]=3, curr_UL_gen[10]=3, comp_UL_gen[10]=3, RB_pending_DL[[10, 13]]=0,assigned_RB_DL = 1, remaining_RB_DL=0
+
+
+pair [11, 10] age at the beginning is 3
+download_user_pairs=[[10, 12], [10, 13]], so pair [11, 10] not selected. pair [11, 10] age at the end is 4
+
+
+pair [11, 12] age at the beginning is 3
+download_user_pairs=[[10, 12], [10, 13]], so pair [11, 12] not selected. pair [11, 12] age at the end is 4
+
+
+pair [12, 11] age at the beginning is 2.0
+download_user_pairs=[[10, 12], [10, 13]], so pair [12, 11] not selected. pair [12, 11] age at the end is 3.0
+
+
+pair [13, 10] age at the beginning is 1.0
+download_user_pairs=[[10, 12], [10, 13]], so pair [13, 10] not selected. pair [13, 10] age at the end is 2.0
+
+
+pair [13, 11] age at the beginning is 1.0
+download_user_pairs=[[10, 12], [10, 13]], so pair [13, 11] not selected. pair [13, 11] age at the end is 2.0
+
+
+user 11 age at the beginning is 3 with period 1
+user 11 completed UL in its prev attempt. old values-curr_UL_gen[11] = -1, comp_UL_gen[11] = -1, RB_pending_UL[11] = 0, remaining_RB_UL = 1.
+last_pack_generated = 4
+user 11 age at the end is 0.0. new packet fully UL in same slot-new values curr_UL_gen[11] = 4, comp_UL_gen[11] = 4, RB_pending_UL[11] = 0, assigned_RB_UL = 1, remaining_RB_UL = 0
+
+
+user 10 age at the beginning is 0.0
+upload_users=[11], so user 10 not selected. user 10 age at the end is 1.0
+
+
+user 12 age at the beginning is 2.0
+upload_users=[11], so user 12 not selected. user 12 age at the end is 3.0
+
+
+user 13 age at the beginning is 1.0
+upload_users=[11], so user 13 not selected. user 13 age at the end is 2.0
+
+
+slot 4 over. curr_UL_gen = {10: 3, 11: 4, 12: 1, 13: 2}, curr_DL_gen = {(10, 12): 3, (10, 13): 3, (11, 10): -1, (11, 12): -1, (12, 11): 1, (13, 10): 2, (13, 11): 2}, comp_UL_gen = {10: 3, 11: 4, 12: 1, 13: 2}, comp_DL_gen = {(10, 12): 3, (10, 13): 3, (11, 10): -1, (11, 12): -1, (12, 11): 1, (13, 10): 2, (13, 11): 2}, RB_pending_UL = {10: 0, 11: 0, 12: 0, 13: 0}, RB_pending_DL = {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}, BS_age = {10: 1.0, 11: 0.0, 12: 3.0, 13: 2.0}, dest_age = {(10, 12): 1.0, (10, 13): 1.0, (11, 10): 4, (11, 12): 4, (12, 11): 3.0, (13, 10): 2.0, (13, 11): 2.0}
+
+no informative packet pending
+
+slot 5 begins. age difference is {(10, 12): 0.0, (10, 13): 0.0, (11, 10): 4.0, (11, 12): 4.0, (12, 11): 0.0, (13, 10): 0.0, (13, 11): 0.0}, age at dest is {(10, 12): 1.0, (10, 13): 1.0, (11, 10): 4, (11, 12): 4, (12, 11): 3.0, (13, 10): 2.0, (13, 11): 2.0}, age at UAV is {10: 1.0, 11: 0.0, 12: 3.0, 13: 2.0}.
+
+
+current episode = 0
+
+slot = 5 for MAD begins, upload_users = [12], download_user_pairs = [[11, 12], [11, 10]], BS_age = {10: 1.0, 11: 0.0, 12: 3.0, 13: 2.0}, dest_age = {(10, 12): 1.0, (10, 13): 1.0, (11, 10): 4, (11, 12): 4, (12, 11): 3.0, (13, 10): 2.0, (13, 11): 2.0}
+
+
+current slot = 5, pair [11, 12] age at the beginning is 4
+pair [11, 12] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[11, 12]]=-1, comp_DL_gen[[11, 12]]=-1, curr_UL_gen[11]=4, comp_UL_gen[11]=4, RB_pending_DL[[11, 12]]=0, remaining_RB_DL=2
+pair [11, 12] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[11, 12]]=4, comp_DL_gen[[11, 12]]=4, curr_UL_gen[11]=4, comp_UL_gen[11]=4, RB_pending_DL[[11, 12]]=0,assigned_RB_DL = 1, remaining_RB_DL=1
+
+
+current slot = 5, pair [11, 10] age at the beginning is 4
+pair [11, 10] completed DL in prev attempt so new packet DL. old values-curr_DL_gen[[11, 10]]=-1, comp_DL_gen[[11, 10]]=-1, curr_UL_gen[11]=4, comp_UL_gen[11]=4, RB_pending_DL[[11, 10]]=0, remaining_RB_DL=1
+pair [11, 10] age at the end is 1.0. completed DL new pack in same slot. new values-curr_DL_gen[[11, 10]]=4, comp_DL_gen[[11, 10]]=4, curr_UL_gen[11]=4, comp_UL_gen[11]=4, RB_pending_DL[[11, 10]]=0,assigned_RB_DL = 1, remaining_RB_DL=0
+
+
+pair [10, 12] age at the beginning is 1.0
+download_user_pairs=[[11, 12], [11, 10]], so pair [10, 12] not selected. pair [10, 12] age at the end is 2.0
+
+
+pair [10, 13] age at the beginning is 1.0
+download_user_pairs=[[11, 12], [11, 10]], so pair [10, 13] not selected. pair [10, 13] age at the end is 2.0
+
+
+pair [12, 11] age at the beginning is 3.0
+download_user_pairs=[[11, 12], [11, 10]], so pair [12, 11] not selected. pair [12, 11] age at the end is 4.0
+
+
+pair [13, 10] age at the beginning is 2.0
+download_user_pairs=[[11, 12], [11, 10]], so pair [13, 10] not selected. pair [13, 10] age at the end is 3.0
+
+
+pair [13, 11] age at the beginning is 2.0
+download_user_pairs=[[11, 12], [11, 10]], so pair [13, 11] not selected. pair [13, 11] age at the end is 3.0
+
+
+user 12 age at the beginning is 3.0 with period 1
+user 12 completed UL in its prev attempt. old values-curr_UL_gen[12] = 1, comp_UL_gen[12] = 1, RB_pending_UL[12] = 0, remaining_RB_UL = 1.
+last_pack_generated = 5
+user 12 age at the end is 0.0. new packet fully UL in same slot-new values curr_UL_gen[12] = 5, comp_UL_gen[12] = 5, RB_pending_UL[12] = 0, assigned_RB_UL = 1, remaining_RB_UL = 0
+
+
+user 10 age at the beginning is 1.0
+upload_users=[12], so user 10 not selected. user 10 age at the end is 2.0
+
+
+user 11 age at the beginning is 0.0
+upload_users=[12], so user 11 not selected. user 11 age at the end is 1.0
+
+
+user 13 age at the beginning is 2.0
+upload_users=[12], so user 13 not selected. user 13 age at the end is 3.0
+
+
+slot 5 over. curr_UL_gen = {10: 3, 11: 4, 12: 5, 13: 2}, curr_DL_gen = {(10, 12): 3, (10, 13): 3, (11, 10): 4, (11, 12): 4, (12, 11): 1, (13, 10): 2, (13, 11): 2}, comp_UL_gen = {10: 3, 11: 4, 12: 5, 13: 2}, comp_DL_gen = {(10, 12): 3, (10, 13): 3, (11, 10): 4, (11, 12): 4, (12, 11): 1, (13, 10): 2, (13, 11): 2}, RB_pending_UL = {10: 0, 11: 0, 12: 0, 13: 0}, RB_pending_DL = {(10, 12): 0, (10, 13): 0, (11, 10): 0, (11, 12): 0, (12, 11): 0, (13, 10): 0, (13, 11): 0}, BS_age = {10: 2.0, 11: 1.0, 12: 0.0, 13: 3.0}, dest_age = {(10, 12): 2.0, (10, 13): 2.0, (11, 10): 1.0, (11, 12): 1.0, (12, 11): 4.0, (13, 10): 3.0, (13, 11): 3.0}
+
+no informative packet pending
+
+MAD scheduling  RP  placement,  4  users. MEAN of final_step_rewards =  17.0 . MEAN of overall_ep_reward =  69.0  MIN and MAX of overall_ep_reward =  69.0 ,  69.0  ... MEAN of overall_ep_peak_reward =  14.0  MIN and MAX of overall_ep_peak_reward =  14.0 ,  14.0 . Similarly for final_step_UAV_rewards - MEAN =  {6.0} , MIN and MAX of final_step_UAV_rewards =  6.0 ,  6.0  end with final state of  [0 0 0 0 0 0 0 0 0 0 0]  with shape  (11,) , min PDR_upload =  {1.0} , max PDR_upload =  {1.0} , min PDR_download =  {1.0} , max PDR_upload =  {1.0} , max_total_packet_lost_upload =  0 , min_total_packet_lost_upload =  0 , max_total_packet_lost_download =  0 , min_total_packet_lost_download =  0
